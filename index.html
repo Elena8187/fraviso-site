@@ -1,0 +1,1680 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>FRAVISO &mdash; Property &amp; Architectural Photography</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap">
+<style>
+  :root{
+    color-scheme: dark;
+    --bg:#0c0c0b;
+    --bg-2:#151412;
+    --bg-3:#1d1b18;
+    --line: rgba(243,239,229,.12);
+    --line-2: rgba(243,239,229,.2);
+    --ink:#f3efe4;
+    --muted:#a8a294;
+    --accent:#ff7a2e;
+    --accent-2:#ff7a2e;
+    --r-lg:28px; --r-md:20px; --r-sm:14px;
+    --shadow-md: 0 16px 40px -18px rgba(0,0,0,.7);
+    --shadow-lg: 0 34px 80px -22px rgba(0,0,0,.75);
+    --shadow-glow: 0 30px 90px -20px rgba(255,122,46,.4);
+  }
+  *{ box-sizing:border-box; }
+  html{ overflow-x:hidden; scroll-behavior:smooth; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Archivo', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden; width:100%;
+  }
+  body::before, body::after{
+    content:""; position:fixed; z-index:0; pointer-events:none; border-radius:50%;
+    filter:blur(90px);
+  }
+  body::before{ top:-15%; left:-12%; width:52vw; height:52vw; background:radial-gradient(circle, rgba(255,122,46,.16), transparent 70%); }
+  body::after{ bottom:-18%; right:-14%; width:48vw; height:48vw; background:radial-gradient(circle, rgba(80,140,255,.11), transparent 70%); }
+  nav.site, header.hero, section, footer{ position:relative; z-index:1; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+  h1,h2,h3{ margin:0; font-family:'Archivo',sans-serif; font-weight:800; letter-spacing:-.01em; text-wrap:balance; }
+  .wrap{ max-width:1180px; margin:0 auto; padding-inline:24px; }
+  .eyebrow{ font-size:.86rem; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; border:none;
+    padding:15px 30px; font-size:.9rem; font-weight:700; letter-spacing:.02em;
+    text-decoration:none; background:var(--accent); color:#151412; cursor:pointer;
+    border-radius:100px; transition:opacity .15s ease, transform .15s ease, box-shadow .15s ease;
+    font-family:'Archivo',sans-serif; box-shadow:0 14px 30px -12px rgba(255,122,46,.55);
+  }
+  .btn:hover{ opacity:.92; transform:translateY(-2px); box-shadow:0 20px 40px -14px rgba(255,122,46,.65); }
+  .btn.ghost{ background:rgba(243,239,229,.06); color:var(--ink); box-shadow:none; backdrop-filter:blur(6px); }
+  .btn.ghost:hover{ background:rgba(243,239,229,.1); transform:translateY(-2px); }
+  .btn:disabled{ opacity:.6; cursor:not-allowed; transform:none !important; box-shadow:none !important; }
+
+  nav.site{
+    position:sticky; top:0; z-index:40;
+    padding-top:env(safe-area-inset-top,0px);
+    background:rgba(12,12,11,.72); backdrop-filter:blur(14px);
+    box-shadow:0 20px 50px -30px rgba(0,0,0,.9);
+  }
+  nav.site .row{ display:flex; align-items:center; justify-content:space-between; padding-block:16px; gap:18px; }
+  .logo-wrap{ display:flex; flex-direction:column; gap:3px; text-decoration:none; flex:none; line-height:1; }
+  .logo{ font-size:1.05rem; font-weight:900; letter-spacing:.14em; text-decoration:none; color:var(--ink); }
+  .logo-tag{ font-size:.56rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); }
+  .nav-right{ display:flex; align-items:center; gap:36px; min-width:0; }
+  .navlinks{
+    display:flex; gap:28px; list-style:none; margin:0; padding:0;
+    overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; min-width:0;
+  }
+  .navlinks::-webkit-scrollbar{ display:none; }
+  .navlinks li{ flex:none; }
+  .navlinks a{ text-decoration:none; font-size:.86rem; color:var(--ink); font-weight:600; white-space:nowrap; transition:color .15s ease; }
+  .navlinks a:hover{ color:var(--accent); }
+  .navcta{ display:flex; align-items:center; flex:none; }
+  .navcta .btn{ padding:11px 22px; font-size:.82rem; white-space:nowrap; }
+  @media (max-width:640px){
+    .nav-right{ gap:18px; }
+    .navlinks{ gap:18px; }
+    .navlinks a{ font-size:.8rem; }
+    .navcta .btn{ padding:9px 16px; }
+    .logo{ font-size:.92rem; }
+    .logo-tag{ display:none; }
+  }
+
+  /* HERO */
+  .hero{
+    position:relative; overflow:hidden; min-height:82vh; display:flex; align-items:flex-end;
+    padding-block:120px 72px;
+  }
+  .hero-bg{ position:absolute; inset:0; z-index:0; }
+  .hero-bg img{ width:100%; height:100%; object-fit:cover; object-position:center 68%; }
+  .hero-bg::after{
+    content:""; position:absolute; inset:0;
+    background:
+      linear-gradient(100deg, rgba(8,7,6,.92) 0%, rgba(8,7,6,.72) 32%, rgba(8,7,6,.32) 58%, rgba(8,7,6,.15) 100%),
+      linear-gradient(0deg, var(--bg) 0%, rgba(12,12,11,.62) 22%, rgba(12,12,11,0) 48%);
+  }
+  .hero-inner{ width:100%; padding-inline:clamp(24px, 6vw, 96px); box-sizing:border-box; }
+  .hero-grid{ position:relative; z-index:1; max-width:700px; }
+  .hero h1{ font-size:clamp(2.2rem,4.6vw,3.5rem); line-height:1.05; }
+  .hero h1 .accent{ color:var(--accent); }
+  .hero p.lead{ margin-top:22px; font-size:1.08rem; line-height:1.65; color:var(--muted); max-width:52ch; }
+  .hero .ctas{ display:flex; gap:14px; margin-top:32px; flex-wrap:wrap; }
+  .hero-stats{ display:flex; gap:64px; margin-top:60px; flex-wrap:wrap; max-width:660px; }
+  .hero-stats div b{ display:block; font-size:1.5rem; font-weight:900; color:var(--ink); }
+  .hero-stats div span{ font-size:.76rem; color:var(--muted); letter-spacing:.03em; }
+  @media (max-width:900px){
+    .hero{ min-height:78vh; padding-block:100px 56px; }
+    .hero-inner{ padding-inline:20px; }
+    .hero-stats{ gap:28px; margin-top:44px; }
+    .hero-bg::after{ background:linear-gradient(180deg, rgba(8,7,6,.5) 0%, rgba(8,7,6,.7) 45%, var(--bg) 92%); }
+  }
+
+  /* PORTFOLIO — category cards (always one row, zoom on click) */
+  .cat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .cat-card{
+    position:relative; display:block; border-radius:var(--r-md); overflow:hidden;
+    aspect-ratio:470/834; background:var(--bg-2);
+    box-shadow:var(--shadow-md); transition:transform .35s ease, box-shadow .35s ease, opacity .35s ease;
+  }
+  .cat-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-lg); }
+  .cat-img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
+  .cat-card:hover .cat-img{ transform:scale(1.05); }
+  .cat-card.zoom-active{ transform:scale(1.08); box-shadow:var(--shadow-lg); z-index:2; }
+  .cat-card.zoom-inactive{ transform:scale(.9); opacity:0; }
+  @media (max-width:640px){ .cat-grid{ grid-template-columns:repeat(2,1fr); gap:12px; } }
+
+  /* PORTFOLIO — category detail views */
+  .portfolio-view{ margin-top:8px; }
+  /* Sticks just under the nav bar while scrolling through a category's photos/videos,
+     so the way out is always on screen instead of only at the very top of the view. */
+  .view-back{
+    position:sticky; top:calc(78px + env(safe-area-inset-top,0px)); z-index:20;
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(20,17,13,.85); backdrop-filter:blur(10px); border:1px solid rgba(255,122,46,.4);
+    color:var(--accent); font-family:'Archivo',sans-serif; font-size:.85rem; font-weight:700;
+    cursor:pointer; padding:10px 20px 10px 16px; border-radius:100px; margin-bottom:28px;
+    box-shadow:0 10px 24px -12px rgba(0,0,0,.6);
+    transition:background .15s ease, border-color .15s ease, transform .15s ease;
+  }
+  .view-back:hover{ background:rgba(255,122,46,.25); border-color:var(--accent); transform:translateX(-2px); }
+  @media (max-width:640px){ .view-back{ top:calc(66px + env(safe-area-inset-top,0px)); } }
+
+  .back-to-top{
+    position:fixed; right:20px; bottom:calc(20px + env(safe-area-inset-bottom,0px));
+    width:48px; height:48px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--accent); color:#17130d; box-shadow:var(--shadow-md);
+    opacity:0; transform:translateY(12px); pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease, background .15s ease;
+    z-index:60;
+  }
+  .back-to-top svg{ width:20px; height:20px; }
+  .back-to-top.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
+  .back-to-top:hover{ background:var(--ink); }
+  @media (max-width:640px){
+    .back-to-top{ right:14px; bottom:calc(14px + env(safe-area-inset-bottom,0px)); width:44px; height:44px; }
+  }
+
+  /* Floating "All Categories" exit — guaranteed visible (fixed, not sticky) the whole
+     time a portfolio category view is open, so there's always a way out without scrolling. */
+  .floating-back{
+    position:fixed; left:20px; bottom:calc(20px + env(safe-area-inset-bottom,0px)); z-index:60;
+    display:inline-flex; align-items:center; gap:8px; border:none; cursor:pointer;
+    background:var(--accent); color:#17130d; font-family:'Archivo',sans-serif; font-size:.85rem; font-weight:700;
+    padding:13px 22px 13px 16px; border-radius:100px; box-shadow:var(--shadow-md);
+    opacity:0; transform:translateY(12px); pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease, background .15s ease;
+  }
+  .floating-back svg{ width:18px; height:18px; flex:none; }
+  .floating-back.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
+  .floating-back:hover{ background:var(--ink); }
+  @media (max-width:640px){
+    .floating-back{ left:14px; bottom:calc(14px + env(safe-area-inset-bottom,0px)); padding:11px 18px 11px 14px; font-size:.8rem; }
+  }
+  .view-head{ max-width:640px; margin-bottom:36px; }
+  .view-head h3{ font-size:clamp(1.4rem,2.4vw,1.9rem); margin-top:10px; font-weight:800; }
+  .view-head p{ color:var(--muted); margin-top:12px; line-height:1.6; }
+
+  /* Reusable "in progress" info panel (Drone, AI) */
+  .info-panel{ display:grid; grid-template-columns:260px 1fr; background:var(--bg-2); border-radius:var(--r-lg); box-shadow:var(--shadow-md); overflow:hidden; }
+  .info-panel-media{
+    background:linear-gradient(160deg, #241a10, var(--bg-3)); display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:14px; padding:40px 24px; text-align:center;
+  }
+  .info-panel-media svg{ width:52px; height:52px; color:var(--accent); }
+  .info-panel-media span{ font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:700; }
+  .info-panel-body{ padding:34px 34px; }
+  .info-panel-body h3{ font-size:1.1rem; font-weight:700; }
+  .info-panel-body > p{ margin-top:10px; color:var(--muted); font-size:.9rem; line-height:1.55; }
+  .info-facts{ list-style:none; margin:22px 0 0; padding:0; display:flex; flex-direction:column; gap:0; }
+  .info-facts li{ display:flex; justify-content:space-between; gap:12px; font-size:.85rem; padding:12px 0; box-shadow:inset 0 -1px 0 rgba(255,255,255,.06); }
+  .info-facts li:last-child{ box-shadow:none; }
+  .info-facts li span:first-child{ color:var(--muted); }
+  .info-facts li span:last-child{ font-weight:700; text-align:right; }
+  .info-panel-body .btn{ margin-top:24px; }
+  @media (max-width:760px){ .info-panel{ grid-template-columns:1fr; } .info-panel-media{ padding:26px; flex-direction:row; } }
+
+  section{ padding-block:110px; }
+  .section-head{ max-width:700px; margin-bottom:50px; }
+  .section-head h2{ font-size:clamp(2rem,3.6vw,3rem); margin-top:12px; }
+  .section-head p{ color:var(--muted); font-size:1.08rem; line-height:1.6; margin-top:16px; }
+
+  /* WHY IT MATTERS */
+  .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .stat{ background:var(--bg-2); padding:36px 28px; border-radius:var(--r-md); box-shadow:var(--shadow-md); transition:transform .25s ease, box-shadow .25s ease; }
+  .stat:hover{ transform:translateY(-6px); box-shadow:var(--shadow-lg); }
+  .stat .num{ font-size:clamp(2.2rem,4vw,3.1rem); font-weight:900; color:var(--accent); font-variant-numeric:tabular-nums; }
+  .stat p{ margin-top:10px; color:var(--muted); font-size:.92rem; line-height:1.5; }
+  .footnote{ margin-top:22px; font-size:.8rem; color:var(--muted); font-style:italic; opacity:.7; }
+  @media (max-width:760px){ .stat-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  /* ABOUT — same full-bleed-photo-with-gradient treatment as the hero: the camera +
+     floor-plan photo sits as the section's own background (window cropped out,
+     keeping just the shot and the shadow that falls off the windowsill), with the
+     text sitting directly on it, exactly like the hero does. */
+  .about-hero{
+    position:relative; overflow:hidden; min-height:66vh; display:flex; align-items:flex-end;
+    padding-block:100px 32px;
+  }
+  .about-bg{ position:absolute; inset:0; z-index:0; }
+  .about-bg img{ width:100%; height:100%; object-fit:cover; object-position:center 42%; }
+  .about-bg::after{
+    content:""; position:absolute; inset:0;
+    background:
+      linear-gradient(100deg, rgba(8,7,6,.92) 0%, rgba(8,7,6,.74) 30%, rgba(8,7,6,.38) 58%, rgba(8,7,6,.12) 88%),
+      linear-gradient(180deg, var(--bg) 0%, rgba(12,12,11,.45) 10%, rgba(12,12,11,0) 26%, rgba(12,12,11,0) 48%, rgba(12,12,11,.6) 68%, var(--bg) 94%);
+  }
+  .about-inner{ position:relative; z-index:1; width:100%; }
+  .about-philosophy{ font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-top:8px; }
+  .about-row{ display:grid; grid-template-columns:1.1fr 1fr; gap:60px; align-items:center; margin-top:14px; }
+  .about-row blockquote{ margin:0; font-size:clamp(1.05rem,1.8vw,1.35rem); line-height:1.5; font-weight:500; color:var(--ink); }
+  .about-row .facts{ display:flex; flex-direction:column; gap:2px; background:rgba(12,12,11,.78); backdrop-filter:blur(6px); border-radius:var(--r-md); box-shadow:var(--shadow-md); overflow:hidden; }
+  .about-row .facts div{ display:flex; justify-content:space-between; font-size:.88rem; padding:18px 24px; }
+  .about-row .facts div:nth-child(even){ background:rgba(255,255,255,.025); }
+  .about-row .facts span:first-child{ color:var(--muted); }
+  .about-row .facts span:last-child{ font-weight:700; }
+  @media (max-width:900px){
+    .about-row{ grid-template-columns:1fr; gap:26px; }
+  }
+  @media (max-width:820px){
+    .about-hero{ min-height:auto; padding-block:64px; }
+    .about-bg::after{ background:
+      linear-gradient(0deg, var(--bg) 0%, rgba(12,12,11,.7) 18%, rgba(12,12,11,.35) 40%, rgba(12,12,11,.55) 70%, var(--bg) 100%);
+    }
+  }
+
+  /* SERVICES */
+  .service-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .service{ background:var(--bg-2); padding:32px 28px; border-radius:var(--r-md); box-shadow:var(--shadow-md); transition:transform .25s ease, box-shadow .25s ease; }
+  .service:hover{ transform:translateY(-6px); box-shadow:var(--shadow-lg); }
+  .service.highlight{ background:linear-gradient(160deg, #2a1c10, var(--bg-3)); box-shadow:var(--shadow-glow); }
+  .service .icon-chip{ width:52px; height:52px; border-radius:50%; background:rgba(255,122,46,.14); display:flex; align-items:center; justify-content:center; }
+  .service .icon{ width:24px; height:24px; color:var(--accent); }
+  .service h3{ font-size:1.05rem; font-weight:700; margin-top:18px; }
+  .service p{ margin:8px 0 0; color:var(--muted); font-size:.88rem; line-height:1.5; }
+  @media (max-width:900px){ .service-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .service-grid{ grid-template-columns:1fr; } }
+
+  /* PHOTOGRAPHY — editorial gallery */
+  .gal-filters{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px; }
+  .gal-filter{
+    border:1px solid var(--line-2); background:transparent; color:var(--muted);
+    font-family:'Archivo',sans-serif; font-size:.74rem; font-weight:700; letter-spacing:.08em;
+    text-transform:uppercase; padding:9px 18px; border-radius:100px; cursor:pointer; transition:all .15s ease;
+  }
+  .gal-filter:hover{ color:var(--ink); }
+  .gal-filter.active{ background:var(--accent); border-color:var(--accent); color:#151412; }
+  .gal-grid{
+    display:grid; grid-template-columns:repeat(6,1fr); grid-auto-rows:150px; gap:14px; grid-auto-flow:dense;
+  }
+  .gal-card{
+    position:relative; border:0; padding:0; cursor:pointer; background:var(--bg-2); overflow:hidden;
+    grid-column:span 2; grid-row:span 1;
+    border-radius:var(--r-md); box-shadow:var(--shadow-md);
+    transition:transform .2s ease, box-shadow .2s ease; will-change:transform;
+  }
+  .gal-card.g-xl{ grid-column:span 4; grid-row:span 2; }
+  .gal-card.g-portrait{ grid-column:span 1; grid-row:span 2; }
+  .gal-card img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+  .gal-card:hover{ box-shadow:var(--shadow-lg); }
+  .gal-card:hover img{ transform:scale(1.06); }
+  .gal-card[hidden]{ display:none; }
+  @media (max-width:900px){
+    .gal-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:220px; }
+    .gal-card, .gal-card.g-xl, .gal-card.g-portrait{ grid-column:span 1; grid-row:span 1; }
+  }
+
+  /* LIGHTBOX */
+  .lightbox{
+    position:fixed; inset:0; z-index:100; background:rgba(4,4,3,.97);
+    display:flex; align-items:center; justify-content:center; padding:24px;
+    padding-top:calc(24px + env(safe-area-inset-top,0px));
+    padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));
+  }
+  .lightbox figure{ margin:0; max-width:min(1000px,92vw); width:100%; }
+  .lightbox img{ width:100%; max-height:74vh; object-fit:contain; background:#000; }
+  .lightbox figcaption{ display:flex; justify-content:space-between; align-items:baseline; margin-top:16px; gap:16px; flex-wrap:wrap; }
+  .lightbox figcaption .hook{ font-size:1.1rem; font-weight:700; }
+  .lightbox figcaption .count{ font-size:.78rem; letter-spacing:.1em; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .lb-close{ position:absolute; top:20px; right:20px; background:transparent; border:1px solid var(--line-2); color:var(--ink); width:40px; height:40px; font-size:1.1rem; cursor:pointer; }
+  .lb-close{ top:calc(20px + env(safe-area-inset-top,0px)); }
+  .lb-arrow{ position:absolute; top:50%; transform:translateY(-50%); background:transparent; border:1px solid var(--line-2); color:var(--ink); width:44px; height:44px; font-size:1.2rem; cursor:pointer; }
+  .lb-arrow.prev{ left:16px; } .lb-arrow.next{ right:16px; }
+  @media (max-width:640px){ .lb-arrow{ width:38px; height:38px; } }
+
+  /* VIDEO PROJECTS */
+  .video-projects{ display:flex; flex-direction:column; gap:24px; }
+  .video-project{
+    display:grid; grid-template-columns:280px 1fr; gap:40px; align-items:center;
+    background:var(--bg-2); border-radius:var(--r-lg); box-shadow:var(--shadow-md); padding:28px;
+  }
+  .video-project-media{ border-radius:var(--r-md); overflow:hidden; box-shadow:var(--shadow-lg); }
+  .video-project-media video{ width:100%; display:block; background:#000; }
+  .video-project-body h3{ font-size:1.25rem; margin-top:8px; }
+  .video-project-body p:not(.eyebrow){ margin-top:12px; color:var(--muted); font-size:.94rem; line-height:1.6; }
+  @media (max-width:760px){ .video-project{ grid-template-columns:1fr; padding:20px; gap:20px; } }
+
+  /* AI IMAGE PROJECTS (before/after + single stills) */
+  .ai-image-projects{ display:flex; flex-direction:column; gap:24px; margin-top:24px; }
+  .ba-card{ background:var(--bg-2); border-radius:var(--r-lg); box-shadow:var(--shadow-md); padding:28px; }
+  .ba-media{ display:grid; grid-template-columns:1fr 1fr; gap:4px; border-radius:var(--r-md); overflow:hidden; box-shadow:var(--shadow-lg); }
+  .ba-media figure{ position:relative; margin:0; }
+  .ba-media img{ width:100%; display:block; object-fit:cover; aspect-ratio:4/3; }
+  .ba-media figcaption{
+    position:absolute; top:10px; left:10px; background:rgba(0,0,0,.6); color:#fff;
+    font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:20px;
+  }
+  .ba-body{ margin-top:20px; }
+  .ba-body h3{ font-size:1.25rem; }
+  .ba-body p:not(.eyebrow){ margin-top:12px; color:var(--muted); font-size:.94rem; line-height:1.6; }
+  .single-image-card{
+    display:grid; grid-template-columns:280px 1fr; gap:40px; align-items:center;
+    background:var(--bg-2); border-radius:var(--r-lg); box-shadow:var(--shadow-md); padding:28px;
+  }
+  .single-image-card .img-media{ border-radius:var(--r-md); overflow:hidden; box-shadow:var(--shadow-lg); }
+  .single-image-card .img-media img{ width:100%; display:block; }
+  .single-image-card h3{ font-size:1.25rem; margin-top:8px; }
+  .single-image-card p:not(.eyebrow){ margin-top:12px; color:var(--muted); font-size:.94rem; line-height:1.6; }
+  @media (max-width:760px){
+    .single-image-card{ grid-template-columns:1fr; padding:20px; gap:20px; }
+    .ba-media{ grid-template-columns:1fr; }
+    .ba-card{ padding:20px; }
+  }
+
+  /* PRICING */
+  .price-card{ background:var(--bg-2); border-radius:var(--r-lg); box-shadow:var(--shadow-md); padding:6px 28px; }
+  .price-toggle{
+    width:100%; display:flex; align-items:center; justify-content:space-between; gap:12px;
+    background:transparent; border:none; color:var(--ink); font-family:'Archivo',sans-serif;
+    font-size:.95rem; font-weight:700; padding:20px 8px; cursor:pointer; text-align:left;
+  }
+  .price-toggle:hover{ color:var(--accent); }
+  .price-toggle .chev{ flex:none; width:18px; height:18px; color:var(--muted); transition:transform .3s ease; }
+  .price-toggle[aria-expanded="true"] .chev{ transform:rotate(180deg); }
+  .price-collapse{ display:grid; grid-template-rows:0fr; transition:grid-template-rows .35s ease; }
+  .price-collapse.open{ grid-template-rows:1fr; }
+  .price-collapse > div{ overflow:hidden; }
+  table.price{ width:100%; border-collapse:collapse; }
+  table.price th, table.price td{ text-align:left; padding:16px 8px; font-size:.95rem; }
+  table.price tbody tr:nth-child(even){ background:rgba(255,255,255,.025); }
+  table.price th{ font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:700; }
+  table.price td:last-child, table.price th:last-child{ text-align:right; font-variant-numeric:tabular-nums; font-weight:700; color:var(--accent-2); }
+  .terms{ margin-top:44px; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .terms div{ background:var(--bg-2); border-radius:var(--r-md); box-shadow:var(--shadow-md); padding:22px 24px; position:relative; overflow:hidden; }
+  .terms div::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--accent); }
+  .terms h3{ font-size:.95rem; font-weight:700; }
+  .terms p{ color:var(--muted); font-size:.88rem; line-height:1.55; margin-top:8px; }
+  @media (max-width:760px){ .terms{ grid-template-columns:1fr; } }
+
+  /* PROCESS — 3D coverflow */
+  .coverflow{ position:relative; height:400px; perspective:1400px; margin-top:10px; }
+  .cf-track{ position:relative; width:100%; height:100%; transform-style:preserve-3d; }
+  .cf-card{
+    position:absolute; left:50%; top:50%; width:280px; height:320px; margin:-160px 0 0 -140px;
+    background:linear-gradient(160deg, var(--bg-3), var(--bg-2)); border-radius:var(--r-md);
+    box-shadow:var(--shadow-lg); padding:32px 28px; cursor:pointer;
+    transition:transform .55s cubic-bezier(.22,.9,.32,1), opacity .55s ease, filter .55s ease;
+    display:flex; flex-direction:column;
+    user-select:none; -webkit-user-select:none; -moz-user-select:none;
+    will-change:transform, opacity, filter; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+  }
+  .cf-card .n{ font-size:2.6rem; font-weight:900; color:var(--accent); }
+  .cf-card h3{ font-size:1.05rem; font-weight:700; margin-top:14px; }
+  .cf-card p{ color:var(--muted); font-size:.88rem; margin-top:10px; line-height:1.5; }
+  .cf-card .icon-chip{ width:52px; height:52px; border-radius:50%; background:rgba(255,122,46,.14); display:flex; align-items:center; justify-content:center; flex:none; }
+  .cf-card .icon{ width:24px; height:24px; color:var(--accent); }
+  .cf-card.highlight{ background:linear-gradient(160deg, #2a1c10, var(--bg-3)); box-shadow:var(--shadow-glow); }
+  .cf-nav{ display:flex; align-items:center; justify-content:center; gap:22px; margin-top:16px; }
+  .cf-arrow{
+    width:44px; height:44px; border-radius:50%; border:none; background:rgba(243,239,229,.08); color:var(--ink);
+    cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:1.2rem; transition:background .15s ease;
+  }
+  .cf-arrow:hover{ background:rgba(255,122,46,.2); color:var(--accent-2); }
+  .cf-dots{ display:flex; gap:8px; }
+  .cf-dot{ width:8px; height:8px; border-radius:50%; background:rgba(243,239,229,.25); border:none; cursor:pointer; padding:0; transition:background .2s ease, transform .2s ease; }
+  .cf-dot.active{ background:var(--accent); transform:scale(1.3); }
+  @media (max-width:640px){
+    .coverflow{ height:360px; }
+    .cf-card{ width:230px; height:290px; margin:-145px 0 0 -115px; padding:26px 22px; }
+  }
+
+  /* CONTACT */
+  .contact{ display:grid; grid-template-columns:1fr; gap:32px; }
+  .contact-card{ background:var(--bg-2); border-radius:var(--r-lg); box-shadow:var(--shadow-md); padding:14px 40px; }
+  .contact-line{ display:flex; justify-content:space-between; align-items:center; padding:22px 0; gap:16px; }
+  .contact-line:not(:last-child){ box-shadow: inset 0 -1px 0 rgba(255,255,255,.06); }
+  .contact-line span:first-child{ color:var(--muted); font-size:.92rem; }
+  .contact-line .val{ font-weight:700; font-size:1.1rem; }
+  .copy-btn{ border:none; background:rgba(243,239,229,.08); color:var(--ink); padding:8px 14px; border-radius:100px; font-size:.75rem; cursor:pointer; font-family:'Archivo',sans-serif; white-space:nowrap; transition:background .15s ease; }
+  .copy-btn:hover{ background:rgba(255,122,46,.18); color:var(--accent-2); }
+  .todo{ color:var(--accent-2); font-style:italic; font-weight:500; }
+  @media (max-width:640px){ .contact-card{ padding:8px 24px; } .contact-line{ padding:18px 0; } }
+
+  /* QUOTE FORM */
+  .quote-form{ background:var(--bg-2); border-radius:var(--r-lg); box-shadow:var(--shadow-md); padding:36px 40px; }
+  .qf-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .qf-field{ display:flex; flex-direction:column; gap:8px; }
+  .qf-field.full{ grid-column:1 / -1; }
+  .qf-field label{ font-size:.8rem; color:var(--muted); letter-spacing:.03em; }
+  .qf-field label .req{ color:var(--accent-2); }
+  .qf-field input[type=text], .qf-field input[type=email], .qf-field input[type=tel], .qf-field select, .qf-field textarea{
+    width:100%; background:var(--bg-3); border:1px solid var(--line); color:var(--ink);
+    border-radius:var(--r-sm); padding:13px 16px; font-size:.92rem; font-family:'Archivo',sans-serif;
+    transition:border-color .15s ease, box-shadow .15s ease; appearance:none; -webkit-appearance:none;
+    accent-color:var(--accent); color-scheme:dark;
+  }
+  .qf-field select{
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8a294' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat:no-repeat; background-position:right 14px center; background-size:16px;
+  }
+  .qf-select{ position:relative; }
+  .qf-select-btn{
+    width:100%; display:flex; align-items:center; justify-content:space-between; gap:10px;
+    background:var(--bg-3); border:1px solid var(--line); color:var(--ink);
+    border-radius:var(--r-sm); padding:13px 16px; font-size:.92rem; font-family:'Archivo',sans-serif;
+    cursor:pointer; transition:border-color .15s ease; text-align:left;
+  }
+  .qf-select-btn:hover, .qf-select.open .qf-select-btn{ border-color:var(--accent); box-shadow:0 0 0 3px rgba(255,122,46,.18); }
+  .qf-select-chev{ flex:none; width:16px; height:16px; color:var(--muted); transition:transform .25s ease; }
+  .qf-select.open .qf-select-chev{ transform:rotate(180deg); color:var(--accent); }
+  .qf-select-list{
+    position:absolute; top:calc(100% + 8px); left:0; right:0; z-index:20;
+    background:var(--bg-3); border:1px solid var(--line-2); border-radius:var(--r-sm);
+    box-shadow:var(--shadow-lg); padding:6px; margin:0; list-style:none;
+    max-height:260px; overflow-y:auto;
+  }
+  .qf-select-list li{
+    padding:10px 14px; border-radius:12px; font-size:.92rem; cursor:pointer;
+    transition:background .12s ease, color .12s ease;
+  }
+  .qf-select-list li:hover, .qf-select-list li.hover{ background:rgba(255,122,46,.16); color:var(--accent-2); }
+  .qf-select-list li[aria-selected="true"]{ color:var(--accent); font-weight:700; }
+  .qf-date-icon{ flex:none; width:18px; height:18px; color:var(--accent); }
+  .qf-date-panel{
+    position:absolute; top:calc(100% + 8px); left:0; z-index:20;
+    background:#0a0a09; border:1px solid var(--line-2); border-radius:var(--r-md);
+    box-shadow:var(--shadow-lg); padding:16px; width:280px; max-width:calc(100vw - 32px);
+  }
+  .qf-date-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+  .qf-date-month{ font-weight:700; font-size:.92rem; }
+  .qf-date-nav{
+    width:30px; height:30px; border-radius:50%; border:1px solid var(--line); background:transparent;
+    color:var(--ink); cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:1rem;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  .qf-date-nav:hover{ border-color:var(--accent); color:var(--accent); }
+  .qf-date-dow{ display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-bottom:4px; }
+  .qf-date-dow span{ display:block; text-align:center; font-size:.7rem; color:var(--muted); letter-spacing:.03em; }
+  .qf-date-grid{ display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+  .qf-date-grid button{
+    aspect-ratio:1; border:none; background:transparent; color:var(--ink); border-radius:50%;
+    font-size:.85rem; cursor:pointer; font-family:'Archivo',sans-serif;
+    transition:background .12s ease, color .12s ease;
+  }
+  .qf-date-grid button:hover:not(:disabled){ background:rgba(255,122,46,.16); color:var(--accent-2); }
+  .qf-date-grid button.selected{ background:var(--accent); color:#17130d; font-weight:700; }
+  .qf-date-grid button.muted{ color:var(--muted); opacity:.35; }
+  .qf-date-grid button:disabled{ cursor:default; }
+  .qf-field textarea{ resize:vertical; min-height:96px; line-height:1.5; }
+  .qf-field input:hover, .qf-field select:hover, .qf-field textarea:hover,
+  .qf-field input:focus, .qf-field select:focus, .qf-field textarea:focus{
+    outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(255,122,46,.18);
+  }
+  .qf-field.error input, .qf-field.error select{ border-color:#ff5a5a; }
+  .qf-error-msg{ color:#ff8a8a; font-size:.78rem; display:none; }
+  .qf-field.error .qf-error-msg{ display:block; }
+  .qf-checks{ display:flex; flex-wrap:wrap; gap:10px 20px; }
+  .qf-check{
+    display:flex; align-items:center; gap:8px; font-size:.9rem; cursor:pointer;
+    padding:8px 14px; border-radius:100px; border:1px solid var(--line); transition:border-color .15s ease, color .15s ease, background .15s ease;
+  }
+  .qf-check input{ width:17px; height:17px; accent-color:var(--accent); cursor:pointer; }
+  .qf-check:hover, .qf-check.checked{ border-color:var(--accent); color:var(--accent); background:rgba(255,122,46,.1); }
+  .qf-check:has(input:focus-visible){ border-color:var(--accent); box-shadow:0 0 0 3px rgba(255,122,46,.18); }
+  .qf-actions{ margin-top:28px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+  .qf-actions .btn{ border:none; cursor:pointer; }
+  .qf-note{ color:var(--muted); font-size:.8rem; }
+  .qf-result{ margin-top:28px; padding-top:28px; border-top:1px solid var(--line); }
+  .qf-result h3{ font-size:1.05rem; }
+  .qf-result p{ color:var(--muted); font-size:.88rem; line-height:1.55; margin-top:8px; }
+  .qf-summary{
+    width:100%; margin-top:16px; background:var(--bg-3); border:1px solid var(--line); color:var(--ink);
+    border-radius:var(--r-sm); padding:16px; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.82rem;
+    line-height:1.6; min-height:180px; white-space:pre-wrap;
+  }
+  .qf-result-actions{ margin-top:16px; display:flex; gap:12px; flex-wrap:wrap; }
+  @media (max-width:640px){
+    .quote-form{ padding:24px 22px; }
+    .qf-grid{ grid-template-columns:1fr; }
+  }
+
+  footer{ padding-block:32px; }
+  footer .wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:.8rem; color:var(--muted); }
+</style>
+
+<nav class="site">
+  <div class="wrap row">
+    <a href="#top" class="logo-wrap"><span class="logo">FRAVISO</span><span class="logo-tag">Beyond the Frame</span></a>
+    <div class="nav-right">
+      <ul class="navlinks">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="navcta">
+        <a href="#contact" class="btn">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg">
+    <img src="assets/154bf64688ac92af5575985bb20e3c3f.png" alt="Sunset terrace of a modern coastal property, interior glowing warm against the dusk sky">
+  </div>
+  <div class="hero-inner">
+   <div class="hero-grid">
+    <p class="eyebrow">Property &amp; Architectural Photography · Kent &amp; London</p>
+    <h1 style="margin-top:14px;">Great Photos <span class="accent">Sell Properties</span> Faster</h1>
+    <p class="lead">Buyers decide with their eyes before they ever book a viewing. Professional photography, video and licensed drone footage that get listings noticed, viewed and let faster, across Kent &amp; London.</p>
+    <div class="ctas">
+      <a href="#contact" class="btn">Get a Quote</a>
+      <a href="#portfolio" class="btn ghost">View Portfolio</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>2 yrs</b><span>Residential &amp; commercial</span></div>
+      <div><b>CAA</b><span>Licensed drone operator</span></div>
+      <div><b>Kent &amp; London</b><span>Full coverage</span></div>
+    </div>
+   </div>
+  </div>
+</header>
+
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Why It Matters</p>
+      <h2>This isn't about the photographer.<br>It's about how fast your listing sells.</h2>
+      <p>Buyers and renters shop with their eyes first. They scroll the photos, picture themselves in the space, and only then decide whether a viewing is worth their time. Weak photos mean fewer views, a longer time on market and a lower perceived asking price. Strong ones change that math.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat"><div class="num">32%</div><p>Professionally photographed listings sell up to 32% faster</p></div>
+      <div class="stat"><div class="num">+61%</div><p>Professional photos get 61% more views online</p></div>
+      <div class="stat"><div class="num">+403%</div><p>Listings with video get up to 403% more enquiries</p></div>
+      <div class="stat"><div class="num">68%</div><p>Aerial drone photos can help properties sell up to 68% faster</p></div>
+    </div>
+    <p class="footnote">Industry data (RubyHome, PhotoUp, Simon Plant Photography)</p>
+  </div>
+</section>
+
+<section class="about-hero" id="about">
+  <div class="about-bg">
+    <img src="assets/887bbd60321d858642198b04ba0339d9.png" alt="Camera and architectural floor-plan sketches on a windowsill, mid-shoot">
+  </div>
+  <div class="wrap">
+    <div class="about-inner">
+      <p class="eyebrow">About</p>
+      <p class="about-philosophy">Frame &middot; Visual &middot; Original</p>
+      <div class="about-row">
+        <blockquote>&ldquo;Two years photographing residential and commercial property across Kent and London. Licensed drone operator, fast turnaround, and one point of contact for photography, video and aerial, so your listing gets everything it needs from a single, reliable source.&rdquo;</blockquote>
+        <div class="facts">
+          <div><span>Based in</span><span>Broadstairs, Kent</span></div>
+          <div><span>Experience</span><span>2 years, residential &amp; commercial</span></div>
+          <div><span>Drone</span><span>CAA-licensed operator</span></div>
+          <div><span>Coverage</span><span>Kent &amp; London</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2>One point of contact for everything the listing needs</h2>
+    </div>
+    <div class="coverflow" id="servicesCoverflow">
+      <div class="cf-track" id="svcTrack"></div>
+    </div>
+    <div class="cf-nav">
+      <button class="cf-arrow" id="svcPrev" aria-label="Previous service">&#8249;</button>
+      <div class="cf-dots" id="svcDots"></div>
+      <button class="cf-arrow" id="svcNext" aria-label="Next service">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Portfolio</p>
+      <h2>See the work, by category</h2>
+      <p>Photography, video, aerial and AI visuals, organised so you can go straight to what you need.</p>
+    </div>
+
+    <div class="cat-grid" id="catGrid">
+      <a href="#portfolio" class="cat-card" data-cat="photography">
+        <img class="cat-img" loading="lazy" decoding="async" src="assets/b70170ec68bfcff71459ce5cc6dab39d.png" alt="Property Photography &ndash; interiors, exteriors, details. View Projects.">
+      </a>
+      <a href="#portfolio" class="cat-card" data-cat="video">
+        <img class="cat-img" loading="lazy" decoding="async" src="assets/f539626ca6d11b7fe21a51d94df2e57e.png" alt="Property Video &ndash; property films, social media, marketing. View Projects.">
+      </a>
+      <a href="#portfolio" class="cat-card" data-cat="drone">
+        <img class="cat-img" loading="lazy" decoding="async" src="assets/091e42858171ba45520be3fcdd77e143.png" alt="Drone &amp; Aerial &ndash; aerial photography, cinematic video. View Projects.">
+      </a>
+      <a href="#portfolio" class="cat-card" data-cat="ai">
+        <img class="cat-img" loading="lazy" decoding="async" src="assets/4bd16ce110d3cbbd83513e223c184a53.png" alt="AI &amp; Visual Design &ndash; AI imagery, property concepts, marketing visuals. View Projects.">
+      </a>
+    </div>
+
+    <!-- 01 Property Photography -->
+    <div class="portfolio-view" id="view-photography" hidden>
+      <button class="view-back" data-back>&larr; All Categories</button>
+      <div class="view-head">
+        <p class="eyebrow">01 &middot; Property Photography</p>
+        <h3>Interiors, exteriors and the details that sell</h3>
+        <p>Photographed the way a buyer walks a property: through the door, into the light, toward the detail that sells it.</p>
+      </div>
+      <div class="gal-filters" id="galFilters">
+        <button class="gal-filter active" data-filter="all">All</button>
+        <button class="gal-filter" data-filter="interior">Interiors</button>
+        <button class="gal-filter" data-filter="exterior">Exteriors</button>
+        <button class="gal-filter" data-filter="detail">Details</button>
+      </div>
+      <div class="gal-grid" id="galGrid"></div>
+    </div>
+
+    <!-- 02 Property Video -->
+    <div class="portfolio-view" id="view-video" hidden>
+      <button class="view-back" data-back>&larr; All Categories</button>
+      <div class="view-head">
+        <p class="eyebrow">02 &middot; Property Video</p>
+        <h3>A walkthrough gives buyers what photos can't</h3>
+        <p>How one room leads into the next, how the light moves through the space during the day: the sense of flow that gets a viewing booked.</p>
+      </div>
+      <div class="video-projects" id="videoProjects"></div>
+    </div>
+
+    <!-- 03 Drone & Aerial -->
+    <div class="portfolio-view" id="view-drone" hidden>
+      <button class="view-back" data-back>&larr; All Categories</button>
+      <div class="view-head">
+        <p class="eyebrow">03 &middot; Drone &amp; Aerial</p>
+        <h3>Licensed aerial photography &amp; video</h3>
+        <p>CAA-licensed drone operator covering Kent &amp; London &mdash; aerial photography and video for property listings, plus wider promotional work like the piece below.</p>
+      </div>
+      <div class="video-projects" id="droneProjects"></div>
+      <div class="info-panel">
+        <div class="info-panel-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M6 8v3a3 3 0 003 3h6a3 3 0 003-3V8M12 14v4"/></svg>
+          <span>More coming</span>
+        </div>
+        <div class="info-panel-body">
+          <h3>More aerial work in progress</h3>
+          <p>Further aerial galleries will be added as new shoots come in: exteriors, grounds and the wider setting a property sits in.</p>
+          <ul class="info-facts">
+            <li><span>Licence</span><span>CAA Flyer ID GBR-RP-NH7LHKNNJ7Y6</span></li>
+            <li><span>Aerial photography</span><span>+£45&ndash;60 add-on</span></li>
+            <li><span>Aerial video</span><span>+£65&ndash;90 add-on</span></li>
+          </ul>
+          <a href="#contact" class="btn ghost">Ask About Availability</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 AI & Visual Design -->
+    <div class="portfolio-view" id="view-ai" hidden>
+      <button class="view-back" data-back>&larr; All Categories</button>
+      <div class="view-head">
+        <p class="eyebrow">04 &middot; AI &amp; Visual Design</p>
+        <h3>AI imagery, concepts &amp; marketing visuals</h3>
+        <p>Virtual staging, architectural concepts, AI-animated visuals and marketing graphics &mdash; clearly labelled as AI-generated, never passed off as camera footage.</p>
+      </div>
+      <div class="video-projects" id="aiProjects"></div>
+      <div class="ai-image-projects" id="aiImageProjects"></div>
+      <div class="info-panel" style="margin-top:24px;">
+        <div class="info-panel-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+          <span>More coming</span>
+        </div>
+        <div class="info-panel-body">
+          <h3>More projects in progress</h3>
+          <p>Further before &rarr; after comparisons, virtual staging and property concept visuals will be added here as new projects are completed.</p>
+          <a href="#contact" class="btn ghost">Ask For Examples</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Pricing</p>
+      <h2>Packages from £80</h2>
+      <p>Custom quotes for commercial and construction projects. Multi-property discounts available.</p>
+    </div>
+    <div class="price-card">
+      <button class="price-toggle" id="priceToggle" aria-expanded="false" aria-controls="priceCollapse">
+        <span id="priceToggleLabel">View full price list</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="price-collapse" id="priceCollapse">
+        <div>
+          <table class="price">
+            <thead><tr><th>Service</th><th>Price</th></tr></thead>
+            <tbody>
+              <tr><td>Photography, 1&ndash;2 bedrooms</td><td>£80&ndash;90</td></tr>
+              <tr><td>Photography, 3&ndash;4 bedrooms</td><td>£110&ndash;130</td></tr>
+              <tr><td>Photography, 5+ bedrooms / premium</td><td>£150&ndash;180</td></tr>
+              <tr><td>Commercial property</td><td>£150&ndash;180 (by floor area)</td></tr>
+              <tr><td>Construction progress visit</td><td>from £110</td></tr>
+              <tr><td>+ Aerial drone photography</td><td>+£45&ndash;60</td></tr>
+              <tr><td>+ Aerial drone video</td><td>+£65&ndash;90</td></tr>
+              <tr><td>Video walkthrough (standalone)</td><td>£120&ndash;150</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="terms">
+      <div><h3>Travel</h3><p>Free within ~15&ndash;20 miles of Broadstairs (Canterbury, Margate, Ramsgate, Deal, Sandwich).</p></div>
+      <div><h3>Further afield</h3><p>Travel fee of £25&ndash;40 across Kent, £50&ndash;70 for London, or travel costs covered at cost.</p></div>
+      <div><h3>Multiple properties</h3><p>10% off each additional property booked on the same visit.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Process</p>
+      <h2>Simple, from enquiry to listing</h2>
+    </div>
+    <div class="coverflow" id="coverflow">
+      <div class="cf-track" id="cfTrack"></div>
+    </div>
+    <div class="cf-nav">
+      <button class="cf-arrow" id="cfPrev" aria-label="Previous step">&#8249;</button>
+      <div class="cf-dots" id="cfDots"></div>
+      <button class="cf-arrow" id="cfNext" aria-label="Next step">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div class="section-head" style="margin-bottom:0;">
+      <p class="eyebrow">Contact</p>
+      <h2>Get a Quote</h2>
+      <p>Based in Broadstairs, Kent, covering Kent and London for sales, lettings, commercial and construction photography.</p>
+    </div>
+
+    <form class="quote-form" id="quoteForm" novalidate>
+      <div class="qf-grid">
+        <div class="qf-field" data-field="name">
+          <label for="qfName">Name <span class="req">*</span></label>
+          <input type="text" id="qfName" name="name" autocomplete="name">
+          <span class="qf-error-msg">Please enter your name.</span>
+        </div>
+        <div class="qf-field" data-field="email">
+          <label for="qfEmail">Email <span class="req">*</span></label>
+          <input type="email" id="qfEmail" name="email" autocomplete="email">
+          <span class="qf-error-msg">Please enter a valid email.</span>
+        </div>
+        <div class="qf-field" data-field="phone">
+          <label for="qfPhone">Phone</label>
+          <input type="tel" id="qfPhone" name="phone" autocomplete="tel">
+        </div>
+        <div class="qf-field" data-field="address">
+          <label for="qfAddress">Property address / area</label>
+          <input type="text" id="qfAddress" name="address" placeholder="e.g. Broadstairs, Kent">
+        </div>
+        <div class="qf-field" data-field="size">
+          <label for="qfSizeBtn">Property size</label>
+          <div class="qf-select" id="qfSizeSelect">
+            <button type="button" class="qf-select-btn" id="qfSizeBtn" aria-haspopup="listbox" aria-expanded="false">
+              <span id="qfSizeLabel">Select&hellip;</span>
+              <svg class="qf-select-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul class="qf-select-list" id="qfSizeListEl" role="listbox" hidden>
+              <li role="option" data-value="" aria-selected="true">Select&hellip;</li>
+              <li role="option" data-value="1&ndash;2 bedrooms">1&ndash;2 bedrooms</li>
+              <li role="option" data-value="3&ndash;4 bedrooms">3&ndash;4 bedrooms</li>
+              <li role="option" data-value="5+ bedrooms / premium">5+ bedrooms / premium</li>
+              <li role="option" data-value="Commercial property">Commercial property</li>
+              <li role="option" data-value="Construction progress visit">Construction progress visit</li>
+            </ul>
+            <input type="hidden" id="qfSize" name="size" value="">
+          </div>
+        </div>
+        <div class="qf-field" data-field="date">
+          <label for="qfDateBtn">Preferred date</label>
+          <div class="qf-select qf-datepicker" id="qfDateSelect">
+            <button type="button" class="qf-select-btn" id="qfDateBtn" aria-haspopup="dialog" aria-expanded="false">
+              <span id="qfDateLabel">Select a date&hellip;</span>
+              <svg class="qf-date-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+            </button>
+            <div class="qf-date-panel" id="qfDatePanel" hidden>
+              <div class="qf-date-head">
+                <button type="button" class="qf-date-nav" id="qfDatePrev" aria-label="Previous month">&#8249;</button>
+                <span class="qf-date-month" id="qfDateMonthLabel"></span>
+                <button type="button" class="qf-date-nav" id="qfDateNext" aria-label="Next month">&#8250;</button>
+              </div>
+              <div class="qf-date-dow" id="qfDateDow"></div>
+              <div class="qf-date-grid" id="qfDateGrid"></div>
+            </div>
+            <input type="hidden" id="qfDate" name="date" value="">
+          </div>
+        </div>
+        <div class="qf-field full" data-field="services">
+          <label>Services needed <span class="req">*</span></label>
+          <div class="qf-checks">
+            <label class="qf-check"><input type="checkbox" name="service" value="Photography"> Photography</label>
+            <label class="qf-check"><input type="checkbox" name="service" value="Video walkthrough"> Video walkthrough</label>
+            <label class="qf-check"><input type="checkbox" name="service" value="Drone / aerial"> Drone &amp; aerial</label>
+            <label class="qf-check"><input type="checkbox" name="service" value="AI visuals"> AI visuals</label>
+          </div>
+          <span class="qf-error-msg">Please choose at least one service.</span>
+        </div>
+        <div class="qf-field full" data-field="message">
+          <label for="qfMessage">Anything else?</label>
+          <textarea id="qfMessage" name="message" placeholder="Number of rooms, access details, timing, anything that helps quote accurately&hellip;"></textarea>
+        </div>
+      </div>
+      <div class="qf-actions">
+        <button type="submit" class="btn" id="qfSubmitBtn">Send Enquiry</button>
+        <span class="qf-note">No booking is made yet &mdash; this sends your enquiry straight to us.</span>
+      </div>
+      <div class="qf-result" id="qfResult" hidden>
+        <h3 id="qfResultTitle">Your enquiry is ready</h3>
+        <p id="qfResultNote">Copy the text below and email it across, or use the button to open it in your email app.</p>
+        <textarea class="qf-summary" id="qfSummary" readonly hidden></textarea>
+        <div class="qf-result-actions">
+          <button type="button" class="btn ghost" id="qfCopyBtn" hidden>Copy Enquiry</button>
+          <a href="#" class="btn ghost" id="qfMailBtn" hidden>Open In Email App</a>
+        </div>
+      </div>
+    </form>
+
+    <div class="contact-card">
+      <div class="contact-line"><span>Email</span><span class="val todo" id="contactEmailVal" data-copy="add-your-email">add your email &rarr;</span> <button class="copy-btn" id="contactEmailCopyBtn" data-copy-target="add-your-email">Copy</button></div>
+      <div class="contact-line"><span>Phone</span><span class="val" data-copy="+447761267178">+44 7761 267178</span> <button class="copy-btn" data-copy-target="+447761267178">Copy</button></div>
+      <div class="contact-line"><span>CAA Flyer ID</span><span class="val">GBR-RP-NH7LHKNNJ7Y6</span> <button class="copy-btn" data-copy-target="GBR-RP-NH7LHKNNJ7Y6">Copy</button></div>
+      <div class="contact-line"><span>Coverage</span><span class="val">Kent &amp; London</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; FRAVISO &ndash; Kent &amp; London</span>
+    <span>Photography · Film · Aerial</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-arrow prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <figure>
+    <img id="lbImg" src="" alt="">
+    <figcaption>
+      <span class="hook" id="lbHook"></span>
+      <span class="count" id="lbCount"></span>
+    </figcaption>
+  </figure>
+  <button class="lb-arrow next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</a>
+
+<button type="button" class="floating-back" id="floatingBack" aria-label="Back to all categories" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+  All Categories
+</button>
+
+<script>
+(function(){
+  // Curated selection from the already-supplied property shoots, reorganised as
+  // individual photographs (rather than grouped by property) so the gallery reads as
+  // one editorial portfolio. Tag/size are provisional and easy to adjust once the final
+  // 24-30 curated photographs are supplied — this array is the only thing to edit.
+  var galleryPhotos = [
+    { id:'4289fc51ef0842a08f315c42560e8bed', cat:'exterior', size:'g-xl' },
+    { id:'187941ef6f324595b2270cf50f09e47d', cat:'interior' },
+    { id:'d55872c8160cff0fa2b3b7776b30001d', cat:'interior' },
+    { id:'d00f405852cc9a485205aeee50454f05', cat:'interior' },
+    { id:'b8586d11eaa125dd3b655ea9e9397597', cat:'interior' },
+    { id:'10c88f19506a357b9cc0025bd1481717', cat:'interior' },
+    { id:'a53a29195853cb550e0a25cf37271a74', cat:'detail', size:'g-portrait' },
+    { id:'ca043634eac45b7a45b480fdb32749b1', cat:'interior' },
+    { id:'670effc2844f3efe99e016c290ccc0dc', cat:'interior', size:'g-portrait' },
+    { id:'0f321500d5d0f22a4fab67c158d61167', cat:'interior', size:'g-portrait' },
+    { id:'a51fa78247e180b92065c7e2fc429fe8', cat:'interior' },
+    { id:'49b21b423f883ee01164cd5b2e78da03', cat:'detail', size:'g-portrait' },
+    { id:'864bac02a13ef52fa718a4735b66eb85', cat:'detail' },
+    { id:'9fd92022b7c44ee2b93ea045fbf6be43', cat:'interior' },
+    { id:'55b59d06af34e0215770d0887c15dfd4', cat:'detail', size:'g-portrait' },
+    { id:'8f72c018c456d839668a86bfcfb56fd2', cat:'detail', size:'g-portrait' },
+    { id:'d75e57396e599bc4228683038ee53017', cat:'interior', size:'g-portrait' },
+    { id:'5f3167a6dc7f8eb4927e246c606f1fef', cat:'interior', size:'g-portrait' },
+    { id:'185697b5a46980c00e761720b30f0606', cat:'interior', size:'g-portrait' },
+    { id:'da0eaad278eb30320892d58be28c8ce6', cat:'interior', size:'g-portrait' },
+    { id:'55148b40e4d12d79df92175faf5e29dd', cat:'interior' },
+    { id:'45c25bd3261698a2a5f1ebed7aaf070e', cat:'interior', size:'g-portrait' },
+    { id:'730e1505026985da05b0b3a6eb0c5545', cat:'interior' },
+    { id:'50d985324284c6dbe9f16b74053663ed', cat:'interior' },
+    { id:'f5d8978d59d3587f673861193ceb2cd8', cat:'interior' },
+    { id:'cbef40e15aff4e0a06405e0865a592d7', cat:'interior' },
+    { id:'7a5803bfaa70b2ff78a42da8682e2b15', cat:'interior', size:'g-xl' },
+    { id:'d83a83afd56e93bf6e0772c946bb336b', cat:'interior' },
+    { id:'94a63308394ff57961f51fa5751fcee6', cat:'interior' },
+    { id:'930345941fdd588c682824ca213f46b7', cat:'interior' },
+    { id:'9bdb48917b1eae27f5ca8a2030a969d1', cat:'interior' },
+    { id:'191da2c62bab930e0c929570e89f02c2', cat:'interior' },
+    { id:'7d3a5f0eb83250572b1ec3385ee94574', cat:'interior', size:'g-xl' },
+    { id:'a01aaf9bd50c645c328e410ac8ad8ec3', cat:'interior', size:'g-portrait' },
+    { id:'60e5b5b926c86a31b05b5f195eb9c3bf', cat:'interior', size:'g-portrait' },
+    { id:'f19de3b5783f7dd8dcfceb19b6e6e1bf', cat:'interior', size:'g-portrait' },
+    { id:'3ffcf24dd42a0f8408a25bad920ed90b', cat:'interior' },
+    { id:'e208ae87015ca00933541f35c89b4021', cat:'interior', size:'g-portrait' },
+    { id:'6c7362bb3906e7e03600382dd5ad397d', cat:'interior' },
+    { id:'5bd33055f3aac8202e6da9422e5d8618', cat:'interior', size:'g-portrait' },
+    { id:'91c70e06c768606b584ce26afcb6148c', cat:'interior', size:'g-portrait' },
+    { id:'be5b6580607f2532baca7eb983e21102', cat:'interior', size:'g-portrait' },
+    { id:'55c0c8f02dca3fb924dc0c725693bc28', cat:'interior', size:'g-portrait' },
+    { id:'d72b94b76e3c3d64878df37bdfb6eb96', cat:'interior', size:'g-portrait' },
+    { id:'4b1badd944cfac4e8895a0f3243af973', cat:'interior', size:'g-xl' },
+    { id:'2ac1cd198f384bdffaa87040e5388ab0', cat:'interior', size:'g-portrait' },
+    { id:'1fe71ac2ce8b20c311351ee3ab88cf2f', cat:'interior', size:'g-portrait' },
+    { id:'bf7e504b9c2f7fad0c2c5c2611bf50ba', cat:'interior', size:'g-portrait' },
+    { id:'5af40bc293743034a61db13901d5934a', cat:'interior', size:'g-portrait' },
+    { id:'de755a9063a8152c57d7c1a6adb29440', cat:'interior', size:'g-portrait' },
+    { id:'6fd9af218ec37d7a10172aa3b049a568', cat:'interior', size:'g-portrait' },
+    { id:'94bdab4dad819249afe3a962b003d6c6', cat:'interior' },
+    { id:'0cb330d8e72b8c61306325b79376c69e', cat:'interior', size:'g-xl' },
+    { id:'c60b29297850bf163b93a5e267d9a066', cat:'interior' },
+    { id:'7280948b0feeff0072b9f77978fa9fb2', cat:'interior' },
+    { id:'343bb92a5ecc77228ac727f7bc101d8a', cat:'detail' },
+    { id:'d88c620e31247419423e5ce98db33d9e', cat:'interior' },
+    { id:'2a958c5440dc7a5ce16f575968c09a43', cat:'interior' },
+    { id:'83d9952b74f87c682388e405372b82bc', cat:'detail', size:'g-xl' }
+  ];
+  var catLabel = { interior:'Interior', exterior:'Exterior', detail:'Detail' };
+
+  var galGrid = document.getElementById('galGrid');
+  var visiblePhotos = galleryPhotos.slice();
+
+  function renderGallery(filter){
+    visiblePhotos = filter === 'all' ? galleryPhotos.slice() : galleryPhotos.filter(function(p){ return p.cat === filter; });
+    galGrid.innerHTML = '';
+    galleryPhotos.forEach(function(p){
+      var show = filter === 'all' || p.cat === filter;
+      var btn = document.createElement('button');
+      btn.className = 'gal-card' + (p.size ? ' ' + p.size : '');
+      btn.setAttribute('data-id', p.id);
+      if(!show) btn.hidden = true;
+      btn.innerHTML = '<img loading="lazy" decoding="async" src="' + assetUrl(p.id) + '" alt="' + catLabel[p.cat] + ' photograph">';
+      galGrid.appendChild(btn);
+    });
+  }
+  renderGallery('all');
+
+  document.getElementById('galFilters').addEventListener('click', function(e){
+    var btn = e.target.closest('.gal-filter');
+    if(!btn) return;
+    document.querySelectorAll('.gal-filter').forEach(function(b){ b.classList.toggle('active', b === btn); });
+    renderGallery(btn.getAttribute('data-filter'));
+  });
+
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbHook = document.getElementById('lbHook');
+  var lbCount = document.getElementById('lbCount');
+  var curImg = 0;
+
+  function render(){
+    var p = visiblePhotos[curImg];
+    lbImg.src = assetUrl(p.id);
+    lbImg.alt = catLabel[p.cat] + ' photograph';
+    lbHook.textContent = catLabel[p.cat];
+    lbCount.textContent = (curImg+1) + ' / ' + visiblePhotos.length;
+  }
+  function open(i){ curImg = i; render(); lb.hidden = false; document.body.style.overflow = 'hidden'; }
+  function close(){ lb.hidden = true; document.body.style.overflow = ''; }
+  function next(){ curImg = (curImg+1) % visiblePhotos.length; render(); }
+  function prev(){ curImg = (curImg-1+visiblePhotos.length) % visiblePhotos.length; render(); }
+
+  galGrid.addEventListener('click', function(e){
+    var card = e.target.closest('.gal-card');
+    if(!card) return;
+    var id = card.getAttribute('data-id');
+    var i = visiblePhotos.findIndex(function(p){ return p.id === id; });
+    if(i > -1) open(i);
+  });
+
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbNext').addEventListener('click', next);
+  document.getElementById('lbPrev').addEventListener('click', prev);
+  lb.addEventListener('click', function(e){ if(e.target === lb){ close(); } });
+  document.addEventListener('keydown', function(e){
+    if(lb.hidden) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowRight') next();
+    if(e.key === 'ArrowLeft') prev();
+  });
+  // swipe navigation on mobile
+  var lbTouchX = null;
+  lb.addEventListener('touchstart', function(e){ lbTouchX = e.touches[0].clientX; }, { passive:true });
+  lb.addEventListener('touchend', function(e){
+    if(lbTouchX === null) return;
+    var dx = e.changedTouches[0].clientX - lbTouchX;
+    if(Math.abs(dx) > 40){ if(dx < 0){ next(); } else { prev(); } }
+    lbTouchX = null;
+  }, { passive:true });
+
+  // Property Video — data-driven; only real, completed projects render (no empty placeholders)
+  var videoProjects = [
+    { title:'Coastal Family Home', desc:"A calm, well-paced walkthrough built to give buyers the flow of the space before they book a viewing.", poster:'a5d7245df3ed2ec38c0d1bcbf92f592e', src:'c43a9a19348a1c8344acc38876b9bc37' },
+    { title:'Northdown Park Avenue', desc:"A grounds-up walkthrough of the garden and exterior, giving buyers a real sense of the outdoor space and setting before they step inside.", poster:'009e803bd9a0d6fddb0bb42e9566ddab', src:'754bd7ce4d13f0dceda2092a7326079b' },
+    { title:'Grand Staircase & Interiors', desc:"A luxury interior walkthrough, from the sweeping spiral staircase to the finished bathrooms and living spaces.", poster:'0f1085b2cefaf6fbf646706b7aa62d5b', src:'f772ed0a801165ca9b25b4316708c20e' },
+    { title:'Character Home, Room by Room', desc:"Original fireplaces, stained glass and a sun-filled conservatory: a bright, natural walkthrough that shows the character buyers come for.", poster:'48f1aff2a2b63e5cefdaa187b448b8b3', src:'d06362fea3909f328b43230964e842b6' },
+    { title:'Ramsgate High Street &amp; Harbour', desc:"A street-level walk from Ramsgate's high street down to the harbour, ending at Cataleya&rsquo;s Caf&eacute;'s own doorstep &mdash; companion footage to the aerial piece, shot and edited as part of the same promotional work for a local caf&eacute; client.", poster:'0f3a8bb074891021971e68260d5b6edf', src:'b98d2afb2063ad9e00e5547f5a1a628c', tag:'Brand &amp; Promo' }
+  ];
+  var videoWrap = document.getElementById('videoProjects');
+  videoProjects.forEach(function(v){
+    var el = document.createElement('div');
+    el.className = 'video-project';
+    el.innerHTML =
+      '<div class="video-project-media"><video controls playsinline preload="none" poster="' + assetUrl(v.poster) + '"><source src="' + assetUrl(v.src) + '" type="video/mp4"></video></div>' +
+      '<div class="video-project-body"><p class="eyebrow">' + (v.tag || 'Featured Walkthrough') + '</p><h3>' + v.title + '</h3><p>' + v.desc + '</p></div>';
+    videoWrap.appendChild(el);
+  });
+
+  // Drone & Aerial — real CAA-licensed drone footage (not every piece is a property walkthrough)
+  var droneProjects = [
+    { title:"Ramsgate Harbour: Cataleya's Caf&eacute;", desc:"Real aerial footage over Ramsgate harbour and the high street, shot and edited as a promotional piece for a local caf&eacute; client &mdash; a look at the drone and video-editing work beyond property walkthroughs.", poster:'e9018eb87bccf21c48b2e9fb60a4f6ac', src:'f00f058962ba3b267317fcf5c46703ad' },
+    { title:"Broadstairs Seafront at Sunset", desc:"A CAA-licensed sunset flyover along Broadstairs beach and seafront &mdash; the same licensed drone operation used for property shoots, turned on a favourite stretch of coastline close to home.", poster:'4bb87b8da94b09a5fd9585124561704e', src:'97d1975fda9c2c36baf7cffd50a9866d' }
+  ];
+  var droneWrap = document.getElementById('droneProjects');
+  droneProjects.forEach(function(v){
+    var el = document.createElement('div');
+    el.className = 'video-project';
+    el.innerHTML =
+      '<div class="video-project-media"><video controls playsinline preload="none" poster="' + assetUrl(v.poster) + '"><source src="' + assetUrl(v.src) + '" type="video/mp4"></video></div>' +
+      '<div class="video-project-body"><p class="eyebrow">Aerial &amp; Drone</p><h3>' + v.title + '</h3><p>' + v.desc + '</p></div>';
+    droneWrap.appendChild(el);
+  });
+
+  // AI & Visual Design — AI-generated / AI-animated pieces, always clearly labelled as such
+  var aiProjects = [
+    { title:'AI-Animated Establishing Shot', desc:"A still photo brought to life with AI into a sweeping aerial-style establishing shot, cut together with real interior walkthrough footage of the same home. The opening shot is AI-generated, not camera or drone footage.", poster:'f6ea27d15b87b58c627b7480d681d3a4', src:'e5b9f09bed0faa17b1072f168d28572a' },
+    { title:'Sketch to Finished Kitchen', desc:"A concept sketch animated with AI into a fully rendered, photoreal kitchen &mdash; a quick way to show a client the finished look before a single cabinet goes in.", poster:'f423ced3dd9790c35feb44c284faba34', src:'8d880106da59ce60d706d312ce646a4b' },
+    { title:'Renovation Progress, Visualised', desc:"An AI-animated concept showing a kitchen renovation moving from 30% to 80% complete &mdash; a visual companion to real construction-progress photography.", poster:'472a284112fc56d1f7c5767086b9d646', src:'140139ae673c25bd285934f1d27cadf8' },
+    { title:'Photo to AI-Animated Flythrough', desc:"A single still photo of a home, supplied by the client, animated with AI into a drone-style flythrough. Generated from a photo, not captured on camera.", poster:'e996f78fa2e5682f20b5d40f518c9318', src:'8dd4025c74833d6f03fc5ec799fcb5ed' }
+  ];
+  var aiWrap = document.getElementById('aiProjects');
+  aiProjects.forEach(function(v){
+    var el = document.createElement('div');
+    el.className = 'video-project';
+    el.innerHTML =
+      '<div class="video-project-media"><video controls playsinline preload="none" poster="' + assetUrl(v.poster) + '"><source src="' + assetUrl(v.src) + '" type="video/mp4"></video></div>' +
+      '<div class="video-project-body"><p class="eyebrow">AI-Generated</p><h3>' + v.title + '</h3><p>' + v.desc + '</p></div>';
+    aiWrap.appendChild(el);
+  });
+
+  // AI & Visual Design — static before/after comparisons and standalone creative stills
+  var aiImageProjects = [
+    { type:'before-after',
+      title:'Concept to Reality: Kitchen Redesign',
+      desc:"A hand-drawn kitchen concept alongside its AI-rendered visualisation &mdash; a clear before-and-after look at how a sketch becomes a photoreal preview before any building work begins. The finished view is AI-generated, not a camera photo.",
+      before:'6844c9755205d84301ddb0c42dcf47ca', after:'200cb394b82a8cecaa9c77a538669938' },
+    { type:'single',
+      title:'Creative AI Study: The Reveal',
+      desc:"A personal illustration experiment &mdash; a lioness portrait emerging from a hand-drawn concept sketch. A look at the creative, illustrative side of the AI toolkit alongside the property work.",
+      src:'5f2aa01565d4dfb27cc6a9f05a169052' },
+    { type:'single',
+      title:'Coastal Concept: Cliffside Retreat',
+      desc:"An AI-generated establishing visual imagining a clifftop home at sunrise &mdash; the same atmospheric, scene-setting style used in real listing videos, created here entirely with AI.",
+      src:'5dfcf1d299c5a7f80dbb0a3d11f2373c' },
+    { type:'before-after',
+      title:'Concept to Reality: Modern Residence',
+      desc:"A stone-and-timber new-build concept, from first sketch to a fully rendered exterior &mdash; the same AI process used for the kitchen concept above, applied to a whole house. The finished view is AI-generated, not a camera photo.",
+      before:'5f2ef72c40bbe3ecb867108219398f8f', after:'df2f3633c22e6193c068f8ca7b62646c' }
+  ];
+  var aiImgWrap = document.getElementById('aiImageProjects');
+  aiImageProjects.forEach(function(v){
+    var el = document.createElement('div');
+    if(v.type === 'before-after'){
+      el.className = 'ba-card';
+      el.innerHTML =
+        '<div class="ba-media">' +
+          '<figure><img loading="lazy" decoding="async" src="' + assetUrl(v.before) + '" alt="Before: concept sketch"><figcaption>Before</figcaption></figure>' +
+          '<figure><img loading="lazy" decoding="async" src="' + assetUrl(v.after) + '" alt="After: AI-rendered visualisation"><figcaption>After</figcaption></figure>' +
+        '</div>' +
+        '<div class="ba-body"><p class="eyebrow">AI-Generated</p><h3>' + v.title + '</h3><p>' + v.desc + '</p></div>';
+    } else {
+      el.className = 'single-image-card';
+      el.innerHTML =
+        '<div class="img-media"><img loading="lazy" decoding="async" src="' + assetUrl(v.src) + '" alt="' + v.title + '"></div>' +
+        '<div><p class="eyebrow">AI-Generated</p><h3>' + v.title + '</h3><p>' + v.desc + '</p></div>';
+    }
+    aiImgWrap.appendChild(el);
+  });
+
+  // Reusable 3D coverflow carousel (Process + Services both use this)
+  // opts.axis: 'x' (horizontal, default) or 'y' (vertical wheel)
+  // opts.resumeAfterInteract: false = clicking a card stops autoplay for good, so the visitor can browse at their own pace
+  // Autoplay drifts continuously frame-by-frame (no CSS-transition "steps"), so the motion
+  // flows rather than ticking; a manual click/arrow/dot still animates with a single eased
+  // CSS transition, since a deliberate jump should feel like a snap, not a drift.
+  function setupCoverflow(opts){
+    var track = document.getElementById(opts.trackId);
+    var dotsEl = document.getElementById(opts.dotsId);
+    if(!track || !dotsEl) return;
+
+    var spacing = opts.spacing || 230;
+    var rotateDeg = opts.rotateDeg || 38;
+    var axis = opts.axis || 'x';
+    var stepMs = opts.transitionMs || 550;
+    var stepTransitionCss = 'transform ' + stepMs + 'ms cubic-bezier(.22,.9,.32,1), opacity ' + stepMs + 'ms ease, filter ' + stepMs + 'ms ease';
+
+    opts.items.forEach(function(item, i){
+      var card = document.createElement('div');
+      card.className = 'cf-card' + (opts.cardClass ? ' ' + opts.cardClass : '') + (item.highlight ? ' highlight' : '');
+      card.setAttribute('data-i', i);
+      card.innerHTML = opts.renderCard(item);
+      card.style.transition = stepTransitionCss;
+      track.appendChild(card);
+
+      var dot = document.createElement('button');
+      dot.className = 'cf-dot';
+      dot.setAttribute('data-i', i);
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dotsEl.appendChild(dot);
+    });
+
+    var cards = Array.from(track.querySelectorAll('.cf-card'));
+    var dots = Array.from(dotsEl.querySelectorAll('.cf-dot'));
+    var n = cards.length;
+    var active = 0;   // last settled integer index
+    var pos = 0;      // current (possibly fractional, mid-drift) position
+    var manuallyStopped = false;
+    var rafId = null;
+    var lastTs = null;
+    var resumeTimer = null;
+
+    function normDiff(diff){
+      if(diff > n/2) diff -= n;
+      if(diff < -n/2) diff += n;
+      return diff;
+    }
+
+    function paint(p){
+      cards.forEach(function(card, i){
+        var diff = normDiff(i - p);
+        var d = Math.abs(diff);
+        var tz, rotMag, op;
+        if(d <= 1){
+          // Center and immediate neighbours stay fully solid — no see-through overlap seam,
+          // just a darker look the further from center they sit.
+          tz = 60 + d * -120;
+          rotMag = rotateDeg * d;
+          op = 1;
+        } else {
+          var t = Math.min(d, 2) - 1;
+          tz = -60 + t * -160;
+          rotMag = rotateDeg + t * 7;
+          op = Math.max(0, 1 - t);
+        }
+        var rot = diff === 0 ? 0 : -Math.sign(diff) * rotMag;
+        // No blur() here on purpose: an animated blur filter is expensive to repaint every
+        // frame (especially on phone GPUs) and was the main cause of the stutter — brightness()
+        // alone gives the same "further = darker" depth cue for a fraction of the cost.
+        var brightness = 1 - Math.min(d, 2) / 2 * .55;
+        var tx = 0, ty = 0;
+        if(axis === 'y'){ ty = diff * spacing; } else { tx = diff * spacing; }
+        card.style.transform = axis === 'y'
+          ? ('translate3d(0,' + ty + 'px,' + tz + 'px) rotateX(' + rot + 'deg)')
+          : ('translate3d(' + tx + 'px,0,' + tz + 'px) rotateY(' + rot + 'deg)');
+        card.style.opacity = op;
+        card.style.zIndex = Math.round(100 - d * 10);
+        card.style.filter = brightness < .999 ? ('brightness(' + brightness.toFixed(2) + ')') : 'none';
+        card.style.pointerEvents = d < 1.5 ? 'auto' : 'none';
+      });
+      var nearest = ((Math.round(p) % n) + n) % n;
+      dots.forEach(function(dot, i){ dot.classList.toggle('active', i === nearest); });
+    }
+
+    function setTransitions(on){
+      cards.forEach(function(c){ c.style.transition = on ? stepTransitionCss : 'none'; });
+    }
+
+    function driftTick(ts){
+      if(lastTs === null) lastTs = ts;
+      var dt = ts - lastTs;
+      lastTs = ts;
+      pos = (pos + dt / opts.autoplayMs) % n;
+      if(pos < 0) pos += n;
+      paint(pos);
+      rafId = requestAnimationFrame(driftTick);
+    }
+
+    function stopDrift(){
+      if(rafId){ cancelAnimationFrame(rafId); rafId = null; }
+      lastTs = null;
+    }
+    function startDrift(){
+      if(!opts.autoplayMs || manuallyStopped || rafId) return;
+      setTransitions(false);
+      lastTs = null;
+      rafId = requestAnimationFrame(driftTick);
+    }
+
+    function goTo(i, userInitiated){
+      stopDrift();
+      clearTimeout(resumeTimer);
+      active = ((i % n) + n) % n;
+      pos = active;
+      setTransitions(true);
+      paint(active);
+      if(userInitiated){
+        if(opts.resumeAfterInteract === false){
+          manuallyStopped = true;
+        } else {
+          resumeTimer = setTimeout(startDrift, stepMs);
+        }
+      }
+    }
+
+    track.addEventListener('click', function(e){
+      var card = e.target.closest('.cf-card');
+      if(card){ goTo(parseInt(card.getAttribute('data-i'), 10), true); }
+    });
+    dots.forEach(function(d){ d.addEventListener('click', function(){ goTo(parseInt(d.getAttribute('data-i'), 10), true); }); });
+    var prevBtn = document.getElementById(opts.prevId);
+    var nextBtn = document.getElementById(opts.nextId);
+    if(prevBtn) prevBtn.addEventListener('click', function(){ goTo(active - 1, true); });
+    if(nextBtn) nextBtn.addEventListener('click', function(){ goTo(active + 1, true); });
+
+    var wrap = document.getElementById(opts.wrapId);
+    if(wrap){
+      wrap.addEventListener('mouseenter', stopDrift);
+      wrap.addEventListener('mouseleave', function(){ if(!manuallyStopped) startDrift(); });
+    }
+
+    setTransitions(false);
+    paint(0);
+    startDrift();
+
+    return { goTo: goTo };
+  }
+
+  setupCoverflow({
+    trackId: 'cfTrack', dotsId: 'cfDots', prevId: 'cfPrev', nextId: 'cfNext', wrapId: 'coverflow',
+    autoplayMs: 4200, spacing: 275,
+    items: [
+      { n:'01', title:'Enquire &amp; book a date', text:"Tell me about the property and what you need, and I'll confirm a date that works." },
+      { n:'02', title:'I shoot the property', text:'Single visit, or multiple properties in one day, happy to discuss.' },
+      { n:'03', title:'Same/next-day editing', text:'Professionally edited, fast, so the listing can go live without delay.' },
+      { n:'04', title:'Ready to list', text:'High-resolution files delivered, ready to upload.' }
+    ],
+    renderCard: function(s){ return '<div class="n">' + s.n + '</div><h3>' + s.title + '</h3><p>' + s.text + '</p>'; }
+  });
+
+  // Services — same vertical/portrait 3D coverflow treatment as Process, just with an icon
+  // instead of a step number. Clicking a card stops the auto-motion for good so the visitor
+  // can browse the rest by hand. Spacing is tighter on phones, where the card itself is smaller.
+  var svcIsCompact = window.matchMedia && window.matchMedia('(max-width:640px)').matches;
+  var svcApi = setupCoverflow({
+    trackId: 'svcTrack', dotsId: 'svcDots', prevId: 'svcPrev', nextId: 'svcNext', wrapId: 'servicesCoverflow',
+    autoplayMs: 4600, transitionMs: 420, resumeAfterInteract: false,
+    spacing: svcIsCompact ? 240 : 275,
+    items: [
+      { icon:'<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13.5" r="3.5"/>', title:'Property Photography', text:'Interior &amp; exterior, HDR, residential and commercial.' },
+      { icon:'<rect x="3" y="6" width="13" height="12" rx="1.2"/><path d="M16 10l5-3v10l-5-3z"/>', title:'Property Video Walkthroughs', text:"The flow a photo can't show: how one room leads to the next." },
+      { icon:'<circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M6 8v3a3 3 0 003 3h6a3 3 0 003-3V8M12 14v4"/>', title:'Licensed Drone Photography &amp; Video', text:'CAA-certified aerial photography and video.' },
+      { icon:'<path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/>', title:'Commercial Property Photography', text:'Offices, retail and commercial units, priced by floor area.' },
+      { icon:'<path d="M3 21h18"/><path d="M5 21V10l6-4 6 4v11"/><path d="M9 21v-5h4v5"/>', title:'Construction Progress Photography', text:'Regular visits documenting a build from groundwork to handover.' },
+      { icon:'<path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>', title:'AI-Enhanced Visuals', text:'Virtual staging, marketing graphics and floor plans, because selling a property well is more than a photograph. Examples on request.' },
+    ],
+    renderCard: function(s){
+      return '<div class="icon-chip"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">' + s.icon + '</svg></div><h3>' + s.title + '</h3><p>' + s.text + '</p>';
+    }
+  });
+
+  // Portfolio category cards: a static row; clicking one zooms it in (the others zoom out/fade)
+  // as a transition into its view — no sliding/looping motion.
+  (function setupCatGrid(){
+    var grid = document.getElementById('catGrid');
+    if(!grid) return;
+    grid.addEventListener('click', function(e){
+      var card = e.target.closest('.cat-card');
+      if(!card) return;
+      e.preventDefault();
+      var cards = Array.from(grid.querySelectorAll('.cat-card'));
+      cards.forEach(function(c){ c.classList.add(c === card ? 'zoom-active' : 'zoom-inactive'); });
+      setTimeout(function(){
+        openView(card.getAttribute('data-cat'));
+        cards.forEach(function(c){ c.classList.remove('zoom-active', 'zoom-inactive'); });
+      }, 380);
+    });
+  })();
+
+  // Portfolio category views: clicking a card opens its view; "All Categories" returns to the grid.
+  var viewCats = ['photography', 'video', 'drone', 'ai'];
+  var floatingBack = document.getElementById('floatingBack');
+  function openView(cat){
+    var grid = document.getElementById('catGrid');
+    if(grid) grid.hidden = true;
+    viewCats.forEach(function(c){
+      var el = document.getElementById('view-' + c);
+      if(el) el.hidden = (c !== cat);
+    });
+    var target = document.getElementById('view-' + cat);
+    if(target) target.scrollIntoView({ behavior:'smooth', block:'start' });
+    if(floatingBack){ floatingBack.hidden = false; requestAnimationFrame(function(){ floatingBack.classList.add('show'); }); }
+  }
+  function closeViews(){
+    viewCats.forEach(function(c){ var el = document.getElementById('view-' + c); if(el) el.hidden = true; });
+    var grid = document.getElementById('catGrid');
+    if(grid) grid.hidden = false;
+    var portfolio = document.getElementById('portfolio');
+    if(portfolio) portfolio.scrollIntoView({ behavior:'smooth', block:'start' });
+    if(floatingBack){ floatingBack.classList.remove('show'); floatingBack.hidden = true; }
+  }
+  document.querySelectorAll('.view-back').forEach(function(btn){
+    btn.addEventListener('click', closeViews);
+  });
+  if(floatingBack) floatingBack.addEventListener('click', closeViews);
+
+  var priceToggle = document.getElementById('priceToggle');
+  var priceCollapse = document.getElementById('priceCollapse');
+  var priceToggleLabel = document.getElementById('priceToggleLabel');
+  if(priceToggle && priceCollapse){
+    priceToggle.addEventListener('click', function(){
+      var open = priceCollapse.classList.toggle('open');
+      priceToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      priceToggleLabel.textContent = open ? 'Hide price list' : 'View full price list';
+    });
+  }
+
+  document.querySelectorAll('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = btn.getAttribute('data-copy-target');
+      var original = btn.textContent;
+      function done(ok){ btn.textContent = ok ? 'Copied' : 'Select text'; setTimeout(function(){ btn.textContent = original; }, 1400); }
+      try{ navigator.clipboard.writeText(text).then(function(){ done(true); }).catch(function(){ done(false); }); }
+      catch(err){ done(false); }
+    });
+  });
+
+  // --- Quote form -------------------------------------------------
+  // Business email: once set, the Contact card and the form's "Open in Email App"
+  // button both use it automatically — no other edits needed.
+  var CONTACT_EMAIL = 'fraviso.visuals@gmail.com';
+  // Local asset map: real hosting serves photos/video from ./assets/ instead of the claude.ai /_blob/ store.
+  var ASSET_EXT = {'091e42858171ba45520be3fcdd77e143':'jpg','0cb330d8e72b8c61306325b79376c69e':'jpg','0f1085b2cefaf6fbf646706b7aa62d5b':'jpg','0f321500d5d0f22a4fab67c158d61167':'jpg','10c88f19506a357b9cc0025bd1481717':'jpg','140139ae673c25bd285934f1d27cadf8':'mp4','154bf64688ac92af5575985bb20e3c3f':'jpg','185697b5a46980c00e761720b30f0606':'jpg','187941ef6f324595b2270cf50f09e47d':'jpg','191da2c62bab930e0c929570e89f02c2':'jpg','1fe71ac2ce8b20c311351ee3ab88cf2f':'jpg','200cb394b82a8cecaa9c77a538669938':'jpg','2a958c5440dc7a5ce16f575968c09a43':'jpg','2ac1cd198f384bdffaa87040e5388ab0':'jpg','343bb92a5ecc77228ac727f7bc101d8a':'jpg','3ffcf24dd42a0f8408a25bad920ed90b':'jpg','4289fc51ef0842a08f315c42560e8bed':'jpg','456bd78902e92c0e62172f8459355e3d':'jpg','45c25bd3261698a2a5f1ebed7aaf070e':'jpg','472a284112fc56d1f7c5767086b9d646':'jpg','48f1aff2a2b63e5cefdaa187b448b8b3':'jpg','49b21b423f883ee01164cd5b2e78da03':'jpg','4b1badd944cfac4e8895a0f3243af973':'jpg','4bd16ce110d3cbbd83513e223c184a53':'jpg','50d985324284c6dbe9f16b74053663ed':'jpg','55148b40e4d12d79df92175faf5e29dd':'jpg','55b59d06af34e0215770d0887c15dfd4':'jpg','55c0c8f02dca3fb924dc0c725693bc28':'jpg','5af40bc293743034a61db13901d5934a':'jpg','5bd33055f3aac8202e6da9422e5d8618':'jpg','5dfcf1d299c5a7f80dbb0a3d11f2373c':'jpg','5f2aa01565d4dfb27cc6a9f05a169052':'jpg','5f2ef72c40bbe3ecb867108219398f8f':'jpg','5f3167a6dc7f8eb4927e246c606f1fef':'jpg','60e5b5b926c86a31b05b5f195eb9c3bf':'jpg','670effc2844f3efe99e016c290ccc0dc':'jpg','6844c9755205d84301ddb0c42dcf47ca':'jpg','6c7362bb3906e7e03600382dd5ad397d':'jpg','6fd9af218ec37d7a10172aa3b049a568':'jpg','7280948b0feeff0072b9f77978fa9fb2':'jpg','730e1505026985da05b0b3a6eb0c5545':'jpg','754bd7ce4d13f0dceda2092a7326079b':'mp4','7a5803bfaa70b2ff78a42da8682e2b15':'jpg','7d3a5f0eb83250572b1ec3385ee94574':'jpg','83d9952b74f87c682388e405372b82bc':'jpg','864bac02a13ef52fa718a4735b66eb85':'jpg','887bbd60321d858642198b04ba0339d9':'jpg','8d880106da59ce60d706d312ce646a4b':'mp4','8dd4025c74833d6f03fc5ec799fcb5ed':'mp4','8f72c018c456d839668a86bfcfb56fd2':'jpg','91c70e06c768606b584ce26afcb6148c':'jpg','930345941fdd588c682824ca213f46b7':'jpg','94a63308394ff57961f51fa5751fcee6':'jpg','94bdab4dad819249afe3a962b003d6c6':'jpg','9bdb48917b1eae27f5ca8a2030a969d1':'jpg','9fd92022b7c44ee2b93ea045fbf6be43':'jpg','a01aaf9bd50c645c328e410ac8ad8ec3':'jpg','a51fa78247e180b92065c7e2fc429fe8':'jpg','a53a29195853cb550e0a25cf37271a74':'jpg','a5d7245df3ed2ec38c0d1bcbf92f592e':'jpg','b70170ec68bfcff71459ce5cc6dab39d':'jpg','b8586d11eaa125dd3b655ea9e9397597':'jpg','be5b6580607f2532baca7eb983e21102':'jpg','bf7e504b9c2f7fad0c2c5c2611bf50ba':'jpg','c43a9a19348a1c8344acc38876b9bc37':'mp4','c60b29297850bf163b93a5e267d9a066':'jpg','ca043634eac45b7a45b480fdb32749b1':'jpg','cbef40e15aff4e0a06405e0865a592d7':'jpg','d00f405852cc9a485205aeee50454f05':'jpg','d06362fea3909f328b43230964e842b6':'mp4','d55872c8160cff0fa2b3b7776b30001d':'jpg','d72b94b76e3c3d64878df37bdfb6eb96':'jpg','d75e57396e599bc4228683038ee53017':'jpg','d83a83afd56e93bf6e0772c946bb336b':'jpg','d88c620e31247419423e5ce98db33d9e':'jpg','da0eaad278eb30320892d58be28c8ce6':'jpg','de755a9063a8152c57d7c1a6adb29440':'jpg','df2f3633c22e6193c068f8ca7b62646c':'jpg','e208ae87015ca00933541f35c89b4021':'jpg','e5b9f09bed0faa17b1072f168d28572a':'mp4','e9018eb87bccf21c48b2e9fb60a4f6ac':'jpg','e996f78fa2e5682f20b5d40f518c9318':'jpg','f00f058962ba3b267317fcf5c46703ad':'mp4','f19de3b5783f7dd8dcfceb19b6e6e1bf':'jpg','f423ced3dd9790c35feb44c284faba34':'jpg','f539626ca6d11b7fe21a51d94df2e57e':'jpg','f5d8978d59d3587f673861193ceb2cd8':'jpg','f6ea27d15b87b58c627b7480d681d3a4':'jpg','f772ed0a801165ca9b25b4316708c20e':'mp4','4bb87b8da94b09a5fd9585124561704e':'jpg','97d1975fda9c2c36baf7cffd50a9866d':'mp4','009e803bd9a0d6fddb0bb42e9566ddab':'jpg','0f3a8bb074891021971e68260d5b6edf':'jpg','b98d2afb2063ad9e00e5547f5a1a628c':'mp4'};
+  function assetUrl(id){ return 'assets/' + id + '.' + (ASSET_EXT[id] || 'jpg'); }
+  // Web3Forms access key — routes real one-click form submissions to fraviso.visuals@gmail.com.
+  // Works only on normal hosting (e.g. Netlify); claude.ai Artifact preview blocks outgoing requests,
+  // so the code below falls back to the mailto flow automatically if the request fails.
+  var WEB3FORMS_KEY = '35d657b9-e2c2-4c36-bd4e-a4cd69ce2cd3';
+
+  if(CONTACT_EMAIL){
+    var emailVal = document.getElementById('contactEmailVal');
+    var emailBtn = document.getElementById('contactEmailCopyBtn');
+    if(emailVal){ emailVal.textContent = CONTACT_EMAIL; emailVal.classList.remove('todo'); emailVal.setAttribute('data-copy', CONTACT_EMAIL); }
+    if(emailBtn){ emailBtn.setAttribute('data-copy-target', CONTACT_EMAIL); }
+  }
+
+  var qfForm = document.getElementById('quoteForm');
+  if(qfForm){
+    var qfFields = {
+      name: document.getElementById('qfName'),
+      email: document.getElementById('qfEmail'),
+      phone: document.getElementById('qfPhone'),
+      address: document.getElementById('qfAddress'),
+      size: document.getElementById('qfSize'),
+      date: document.getElementById('qfDate'),
+      message: document.getElementById('qfMessage')
+    };
+    function qfSetError(name, on){
+      var el = qfForm.querySelector('[data-field="' + name + '"]');
+      if(el) el.classList.toggle('error', !!on);
+    }
+    function qfEmailLooksValid(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    // Custom "Property size" dropdown (rounded, on-brand — replaces the native select popup)
+    var qfSizeSelect = document.getElementById('qfSizeSelect');
+    if(qfSizeSelect){
+      var qfSizeBtn = document.getElementById('qfSizeBtn');
+      var qfSizeLabel = document.getElementById('qfSizeLabel');
+      var qfSizeListEl = document.getElementById('qfSizeListEl');
+      var qfSizeHidden = document.getElementById('qfSize');
+      var qfSizeOptions = qfSizeListEl.querySelectorAll('li');
+
+      function qfCloseSize(){ qfSizeListEl.hidden = true; qfSizeBtn.setAttribute('aria-expanded','false'); qfSizeSelect.classList.remove('open'); }
+      function qfOpenSize(){ qfSizeListEl.hidden = false; qfSizeBtn.setAttribute('aria-expanded','true'); qfSizeSelect.classList.add('open'); }
+
+      qfSizeBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        if(qfSizeListEl.hidden) qfOpenSize(); else qfCloseSize();
+      });
+      qfSizeOptions.forEach(function(opt){
+        opt.addEventListener('click', function(){
+          qfSizeHidden.value = opt.getAttribute('data-value');
+          qfSizeLabel.textContent = opt.textContent;
+          qfSizeOptions.forEach(function(o){ o.setAttribute('aria-selected', o === opt ? 'true' : 'false'); });
+          qfCloseSize();
+        });
+      });
+      document.addEventListener('click', function(e){
+        if(!qfSizeSelect.contains(e.target)) qfCloseSize();
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') qfCloseSize();
+      });
+    }
+
+    // Custom "Preferred date" picker (rounded, on-brand, always shown in English
+    // regardless of the visitor's browser/OS language)
+    var qfDateSelect = document.getElementById('qfDateSelect');
+    if(qfDateSelect){
+      var qfDateBtn = document.getElementById('qfDateBtn');
+      var qfDateLabel = document.getElementById('qfDateLabel');
+      var qfDatePanel = document.getElementById('qfDatePanel');
+      var qfDateMonthLabel = document.getElementById('qfDateMonthLabel');
+      var qfDateDow = document.getElementById('qfDateDow');
+      var qfDateGrid = document.getElementById('qfDateGrid');
+      var qfDateHidden = document.getElementById('qfDate');
+      var qfDatePrev = document.getElementById('qfDatePrev');
+      var qfDateNext = document.getElementById('qfDateNext');
+
+      var QF_MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var QF_DOW = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+      var qfToday = new Date();
+      var qfViewYear = qfToday.getFullYear();
+      var qfViewMonth = qfToday.getMonth();
+      var qfSelectedDate = null;
+
+      qfDateDow.innerHTML = QF_DOW.map(function(d){ return '<span>' + d + '</span>'; }).join('');
+
+      function qfPad(n){ return n < 10 ? '0' + n : '' + n; }
+
+      function qfRenderCalendar(){
+        qfDateMonthLabel.textContent = QF_MONTHS[qfViewMonth] + ' ' + qfViewYear;
+        var firstDay = new Date(qfViewYear, qfViewMonth, 1);
+        var startOffset = (firstDay.getDay() + 6) % 7;
+        var daysInMonth = new Date(qfViewYear, qfViewMonth + 1, 0).getDate();
+        var daysInPrevMonth = new Date(qfViewYear, qfViewMonth, 0).getDate();
+        var cells = [];
+        var i;
+        for(i = 0; i < startOffset; i++){ cells.push({ day: daysInPrevMonth - startOffset + i + 1, muted:true }); }
+        for(i = 1; i <= daysInMonth; i++){ cells.push({ day:i }); }
+        while(cells.length % 7 !== 0){ cells.push({ day: cells.length - startOffset - daysInMonth + 1, muted:true }); }
+
+        qfDateGrid.innerHTML = '';
+        cells.forEach(function(c){
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.textContent = c.day;
+          if(c.muted){
+            btn.className = 'muted';
+            btn.disabled = true;
+          } else {
+            if(qfSelectedDate && qfSelectedDate.y === qfViewYear && qfSelectedDate.m === qfViewMonth && qfSelectedDate.d === c.day){
+              btn.className = 'selected';
+            }
+            (function(day){
+              btn.addEventListener('click', function(){
+                qfSelectedDate = { y:qfViewYear, m:qfViewMonth, d:day };
+                qfDateHidden.value = qfViewYear + '-' + qfPad(qfViewMonth + 1) + '-' + qfPad(day);
+                qfDateLabel.textContent = QF_MONTHS[qfViewMonth].slice(0,3) + ' ' + day + ', ' + qfViewYear;
+                qfRenderCalendar();
+                qfCloseDate();
+              });
+            })(c.day);
+          }
+          qfDateGrid.appendChild(btn);
+        });
+      }
+
+      function qfCloseDate(){ qfDatePanel.hidden = true; qfDateBtn.setAttribute('aria-expanded','false'); qfDateSelect.classList.remove('open'); }
+      function qfOpenDate(){ qfDatePanel.hidden = false; qfDateBtn.setAttribute('aria-expanded','true'); qfDateSelect.classList.add('open'); qfRenderCalendar(); }
+
+      qfDateBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        if(qfDatePanel.hidden) qfOpenDate(); else qfCloseDate();
+      });
+      qfDatePrev.addEventListener('click', function(e){
+        e.stopPropagation();
+        qfViewMonth--; if(qfViewMonth < 0){ qfViewMonth = 11; qfViewYear--; }
+        qfRenderCalendar();
+      });
+      qfDateNext.addEventListener('click', function(e){
+        e.stopPropagation();
+        qfViewMonth++; if(qfViewMonth > 11){ qfViewMonth = 0; qfViewYear++; }
+        qfRenderCalendar();
+      });
+      document.addEventListener('click', function(e){
+        if(!qfDateSelect.contains(e.target)) qfCloseDate();
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') qfCloseDate();
+      });
+    }
+
+    // Service checkboxes light up orange when checked
+    qfForm.querySelectorAll('.qf-check').forEach(function(label){
+      var cb = label.querySelector('input[type="checkbox"]');
+      if(!cb) return;
+      function syncChecked(){ label.classList.toggle('checked', cb.checked); }
+      cb.addEventListener('change', syncChecked);
+      syncChecked();
+    });
+
+    qfForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = qfFields.name.value.trim();
+      var email = qfFields.email.value.trim();
+      var services = Array.prototype.slice.call(qfForm.querySelectorAll('input[name="service"]:checked')).map(function(c){ return c.value; });
+
+      var nameOk = name.length > 0;
+      var emailOk = qfEmailLooksValid(email);
+      var servicesOk = services.length > 0;
+      qfSetError('name', !nameOk);
+      qfSetError('email', !emailOk);
+      qfSetError('services', !servicesOk);
+      if(!nameOk || !emailOk || !servicesOk){
+        var firstBad = qfForm.querySelector('.qf-field.error');
+        if(firstBad) firstBad.scrollIntoView({ behavior:'smooth', block:'center' });
+        return;
+      }
+
+      var lines = [
+        'Property Photography Enquiry',
+        '',
+        'Name: ' + name,
+        'Email: ' + email
+      ];
+      if(qfFields.phone.value.trim()) lines.push('Phone: ' + qfFields.phone.value.trim());
+      if(qfFields.address.value.trim()) lines.push('Property / area: ' + qfFields.address.value.trim());
+      if(qfFields.size.value) lines.push('Property size: ' + qfFields.size.value);
+      lines.push('Services: ' + services.join(', '));
+      if(qfFields.date.value) lines.push('Preferred date: ' + (typeof qfDateLabel !== 'undefined' && qfDateLabel ? qfDateLabel.textContent : qfFields.date.value));
+      if(qfFields.message.value.trim()){ lines.push(''); lines.push('Message:'); lines.push(qfFields.message.value.trim()); }
+      var summary = lines.join('\n');
+
+      var result = document.getElementById('qfResult');
+      var resultTitle = document.getElementById('qfResultTitle');
+      var summaryBox = document.getElementById('qfSummary');
+      var mailBtn = document.getElementById('qfMailBtn');
+      var copyBtn2 = document.getElementById('qfCopyBtn');
+      var resultNote = document.getElementById('qfResultNote');
+      var submitBtn = document.getElementById('qfSubmitBtn');
+      summaryBox.value = summary;
+
+      function showFallback(msg){
+        result.hidden = false;
+        summaryBox.hidden = false;
+        resultTitle.textContent = 'Your enquiry is ready';
+        resultNote.textContent = msg;
+        if(CONTACT_EMAIL){
+          mailBtn.href = 'mailto:' + encodeURIComponent(CONTACT_EMAIL) + '?subject=' + encodeURIComponent('Property photography enquiry from ' + name) + '&body=' + encodeURIComponent(summary);
+          mailBtn.hidden = false;
+        }
+        copyBtn2.hidden = false;
+        result.scrollIntoView({ behavior:'smooth', block:'start' });
+      }
+
+      function showSent(){
+        result.hidden = false;
+        summaryBox.hidden = true;
+        mailBtn.hidden = true;
+        copyBtn2.hidden = true;
+        resultTitle.textContent = 'Enquiry sent';
+        resultNote.textContent = 'Thanks, ' + name + ' — your enquiry has been sent. We’ll be in touch shortly.';
+        result.scrollIntoView({ behavior:'smooth', block:'start' });
+      }
+
+      if(!WEB3FORMS_KEY){
+        showFallback(CONTACT_EMAIL ? 'Copy the text below, or use the button to open it in your email app addressed to us.' : 'Copy the text below and send it across using the phone or email in the card beneath.');
+        return;
+      }
+
+      var originalBtnLabel = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: 'Property photography enquiry from ' + name,
+          from_name: name,
+          email: email,
+          phone: qfFields.phone.value.trim(),
+          property_area: qfFields.address.value.trim(),
+          property_size: qfFields.size.value,
+          services: services.join(', '),
+          preferred_date: qfFields.date.value ? (typeof qfDateLabel !== 'undefined' && qfDateLabel ? qfDateLabel.textContent : qfFields.date.value) : '',
+          message: summary
+        })
+      }).then(function(res){ return res.json().then(function(data){ return { ok: res.ok, data: data }; }); })
+        .then(function(r){
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnLabel;
+          if(r.ok && r.data && r.data.success){
+            qfForm.reset();
+            qfForm.querySelectorAll('.qf-check').forEach(function(label){ label.classList.remove('checked'); });
+            if(typeof qfSizeLabel !== 'undefined' && qfSizeLabel) qfSizeLabel.textContent = 'Select…';
+            if(typeof qfDateLabel !== 'undefined' && qfDateLabel) qfDateLabel.textContent = 'Select a date…';
+            showSent();
+          } else {
+            showFallback('We couldn’t send this automatically. Copy the text below, or use the button to open it in your email app addressed to us.');
+          }
+        })
+        .catch(function(){
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnLabel;
+          showFallback('We couldn’t send this automatically (check your connection). Copy the text below, or use the button to open it in your email app addressed to us.');
+        });
+    });
+
+    var qfCopyBtn = document.getElementById('qfCopyBtn');
+    if(qfCopyBtn){
+      qfCopyBtn.addEventListener('click', function(){
+        var text = document.getElementById('qfSummary').value;
+        var original = qfCopyBtn.textContent;
+        function done(ok){ qfCopyBtn.textContent = ok ? 'Copied' : 'Select text above'; setTimeout(function(){ qfCopyBtn.textContent = original; }, 1600); }
+        try{ navigator.clipboard.writeText(text).then(function(){ done(true); }).catch(function(){ done(false); }); }
+        catch(err){ done(false); }
+      });
+    }
+  }
+
+  // Floating back-to-top button
+  var backToTop = document.getElementById('backToTop');
+  if(backToTop){
+    function syncBackToTop(){ backToTop.classList.toggle('show', window.scrollY > 500); }
+    window.addEventListener('scroll', syncBackToTop, { passive:true });
+    syncBackToTop();
+  }
+})();
+</script>
+
+</body></html>
